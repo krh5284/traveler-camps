@@ -2,3 +2,6 @@ baseURL = 'https://github.com/krh5284/traveler-camps/'
 locale = 'en-us'
 title = 'Traveler Camps'
 theme = 'ananke'
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
