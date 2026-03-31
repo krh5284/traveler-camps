@@ -2,10 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Traveler Camps</title>
-    <link>https://github.com/krh5284/traveler-camps/</link>
+    <link>http://localhost:1313/krh5284/traveler-camps/</link>
     <description>Recent content on Traveler Camps</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://github.com/krh5284/traveler-camps/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 31 Mar 2026 13:22:23 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/krh5284/traveler-camps/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>New Campground</title>
+      <link>http://localhost:1313/krh5284/traveler-camps/new-campground/</link>
+      <pubDate>Tue, 31 Mar 2026 13:22:23 -0500</pubDate>
+      <guid>http://localhost:1313/krh5284/traveler-camps/new-campground/</guid>
+      <description>&lt;iframe src=&#34;https://docs.google.com/forms/d/e/1FAIpQLScnXxlXHPSEs-Dvq_OZQUxlkOTJYXgadvNW20OpeKrRbYUtww/viewform?embedded=true&#34; width=&#34;640&#34; height=&#34;3184&#34; frameborder=&#34;0&#34; marginheight=&#34;0&#34; marginwidth=&#34;0&#34;&gt;Loading…&lt;/iframe&gt;</description>
+    </item>
+    <item>
+      <title>New Job Site</title>
+      <link>http://localhost:1313/krh5284/traveler-camps/new-job-site/</link>
+      <pubDate>Tue, 31 Mar 2026 13:21:50 -0500</pubDate>
+      <guid>http://localhost:1313/krh5284/traveler-camps/new-job-site/</guid>
+      <description>&lt;iframe src=&#34;https://docs.google.com/forms/d/e/1FAIpQLSfVjETHhX0LLpKpLEvMJSdG7fqsAo2oZYNRMkdzwovjE4zaqA/viewform?embedded=true&#34; width=&#34;640&#34; height=&#34;3049&#34; frameborder=&#34;0&#34; marginheight=&#34;0&#34; marginwidth=&#34;0&#34;&gt;Loading…&lt;/iframe&gt;</description>
+    </item>
+    <item>
+      <title>My First Post</title>
+      <link>http://localhost:1313/krh5284/traveler-camps/posts/my-first-post/</link>
+      <pubDate>Mon, 30 Mar 2026 15:13:54 -0500</pubDate>
+      <guid>http://localhost:1313/krh5284/traveler-camps/posts/my-first-post/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

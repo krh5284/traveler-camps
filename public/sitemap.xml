@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://github.com/krh5284/traveler-camps/categories/</loc>
+    <loc>http://localhost:1313/krh5284/traveler-camps/new-job-site/</loc>
+    <lastmod>2026-03-31T13:21:50-05:00</lastmod>
   </url><url>
-    <loc>https://github.com/krh5284/traveler-camps/posts/</loc>
+    <loc>http://localhost:1313/krh5284/traveler-camps/</loc>
+    <lastmod>2026-03-31T13:21:50-05:00</lastmod>
   </url><url>
-    <loc>https://github.com/krh5284/traveler-camps/tags/</loc>
+    <loc>http://localhost:1313/krh5284/traveler-camps/posts/my-first-post/</loc>
+    <lastmod>2026-03-30T15:13:54-05:00</lastmod>
   </url><url>
-    <loc>https://github.com/krh5284/traveler-camps/</loc>
+    <loc>http://localhost:1313/krh5284/traveler-camps/posts/</loc>
+    <lastmod>2026-03-30T15:13:54-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/krh5284/traveler-camps/new-campground/</loc>
+  </url><url>
+    <loc>http://localhost:1313/krh5284/traveler-camps/categories/</loc>
+  </url><url>
+    <loc>http://localhost:1313/krh5284/traveler-camps/tags/</loc>
   </url>
 </urlset>
