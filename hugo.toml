@@ -25,3 +25,5 @@ theme = 'hugo-PaperMod'
   [caches.modules]
     dir = ':cacheDir/modules'
     maxAge = -1
+
+ noBuildLock = true
