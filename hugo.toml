@@ -1,7 +1,7 @@
 baseURL = 'https://krh5284.github.io/traveler-camps/'
 locale = 'en-us'
 title = 'Traveler Camps'
-theme = 'ananke'
+theme = 'hugo-PaperMod'
 
 [caches]
   [caches.assets]
@@ -25,3 +25,5 @@ theme = 'ananke'
   [caches.modules]
     dir = ':cacheDir/modules'
     maxAge = -1
+
+ noBuildLock = true
