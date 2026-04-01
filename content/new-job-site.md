@@ -1,7 +1,6 @@
 +++
-date = '2026-03-31T13:21:50-05:00'
-draft = true
-title = 'New Job Site'
+draft = false
+title = 'New Job Site Request'
 +++
 
 {{< rawhtml >}}
