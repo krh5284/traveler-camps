@@ -6,19 +6,19 @@ theme = 'hugo-PaperMod'
 [[menu.main]]
 identifier = "contact-us"
 name = "Contact Us"
-url = "http://localhost:1313/traveler-camps/contact-us/"
+url = "/contact-us/"
 weight = 10
 
 [[menu.main]]
 identifier = "new-job-site"
 name = "New Job Site Request"
-url = "http://localhost:1313/traveler-camps/new-job-site/"
+url = "/new-job-site/"
 weight = 20
 
 [[menu.main]]
 identifier = "new-campgroud"
 name = "New Campground Request"
-url = "http://localhost:1313/traveler-camps/new-campground/"
+url = "/new-campground/"
 weight = 30
 
 [caches]
@@ -49,7 +49,7 @@ Title = "Welcome to Traveler Camps"
 Content = """
 The goal of this site is to provide one location where traveling workers can find campgrounds and RV parks near their job site. 
 Our site is new and our map is incomplete. Please help us add to the map by following the links at the top right of the page.
-Go to the [Map](http://localhost:1313/traveler-camps/map/)
+Go to the [Map](https://krh5284.github.io/traveler-camps/map/)
 """
 
 
