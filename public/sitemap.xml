@@ -6,6 +6,8 @@
   </url><url>
     <loc>http://localhost:1313/traveler-camps/contact-us/</loc>
   </url><url>
+    <loc>http://localhost:1313/traveler-camps/map/</loc>
+  </url><url>
     <loc>http://localhost:1313/traveler-camps/new-campground/</loc>
   </url><url>
     <loc>http://localhost:1313/traveler-camps/new-job-site/</loc>
