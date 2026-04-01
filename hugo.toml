@@ -46,6 +46,10 @@ weight = 30
 
 [params.homeInfoParams]
 Title = "Welcome to Traveler Camps"
-Content = "The goal of this site is to provide one location where traveling workers can find campgrounds and RV parks near their job site. Our site is new and our map is incomplete. Please help us add to the map by following the links at the top right of the page"
+Content = """
+The goal of this site is to provide one location where traveling workers can find campgrounds and RV parks near their job site. 
+Our site is new and our map is incomplete. Please help us add to the map by following the links at the top right of the page.
+Go to the [Map](http://localhost:1313/traveler-camps/map/)
+"""
 
 
