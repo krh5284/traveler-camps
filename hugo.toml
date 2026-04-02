@@ -4,6 +4,12 @@ title = 'Traveler Camps'
 theme = 'hugo-PaperMod'
 
 [[menu.main]]
+identifier = "map"
+name = "Map"
+url = "/map/"
+weight = 10
+
+[[menu.main]]
 identifier = "contact-us"
 name = "Contact Us"
 url = "/contact-us/"
