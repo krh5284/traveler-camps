@@ -13,7 +13,7 @@ weight = 10
 identifier = "contact-us"
 name = "Contact Us"
 url = "/contact-us/"
-weight = 10
+weight = 40
 
 [[menu.main]]
 identifier = "new-job-site"
