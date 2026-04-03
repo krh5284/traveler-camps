@@ -2,24 +2,30 @@ baseURL: https://krh5284.github.io/traveler-camps/
 locale: en-us
 title: Traveler Camps
 theme: hugo-PaperMod
+
 menu:
   main:
     - identifier: map
       name: Map
       url: /map/
       weight: 10
-    - identifier: contact-us
-      name: Contact Us
-      url: /contact-us/
-      weight: 40
+
     - identifier: new-job-site
       name: New Job Site Request
       url: /new-job-site/
       weight: 20
+      
     - identifier: new-campgroud
       name: New Campground Request
       url: /new-campground/
       weight: 30
+
+    - identifier: contact-us
+      name: Contact Us
+      url: /contact-us/
+      weight: 40
+
+    
 caches:
   assets:
     dir: :resourceDir/_gen
@@ -42,13 +48,13 @@ caches:
   modules:
     dir: :cacheDir/modules
     maxAge: -1
+
+
 params:
   homeInfoParams:
     Title: Welcome to Traveler Camps
     Content: >
       The goal of this site is to provide one location where traveling workers
-      can find campgrounds and RV parks near their job site. 
-
+      can find campgrounds and RV parks near their job site.
       Our site is new and our map is incomplete. Please help us add to the map by following the links at the top right of the page.
-
       Go to the [Map](https://krh5284.github.io/traveler-camps/map/)
