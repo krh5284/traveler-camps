@@ -2,49 +2,49 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Traveler Camps</title>
-    <link>http://localhost:1313/traveler-camps/</link>
+    <link>https://krh5284.github.io/traveler-camps/</link>
     <description>Recent content on Traveler Camps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2026 </copyright>
-    <atom:link href="http://localhost:1313/traveler-camps/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krh5284.github.io/traveler-camps/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title></title>
-      <link>http://localhost:1313/traveler-camps/contact-us/</link>
+      <link>https://krh5284.github.io/traveler-camps/contact-us/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/traveler-camps/contact-us/</guid>
+      <guid>https://krh5284.github.io/traveler-camps/contact-us/</guid>
       <description>&lt;iframe src=&#34;https://docs.google.com/forms/d/e/1FAIpQLSeIEsNSBnN4z7ahoEacYA_sAA14hlAXKlDo2GgkGB_cAG8UGA/viewform?embedded=true&#34; width=&#34;640&#34; height=&#34;750&#34; frameborder=&#34;0&#34; marginheight=&#34;0&#34; marginwidth=&#34;0&#34;&gt;Loading…&lt;/iframe&gt;</description>
       
     </item>
     
     <item>
       <title></title>
-      <link>http://localhost:1313/traveler-camps/new-campground/</link>
+      <link>https://krh5284.github.io/traveler-camps/new-campground/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/traveler-camps/new-campground/</guid>
+      <guid>https://krh5284.github.io/traveler-camps/new-campground/</guid>
       <description>&lt;iframe src=&#34;https://docs.google.com/forms/d/e/1FAIpQLScnXxlXHPSEs-Dvq_OZQUxlkOTJYXgadvNW20OpeKrRbYUtww/viewform?embedded=true&#34; width=&#34;640&#34; height=&#34;625&#34; frameborder=&#34;0&#34; marginheight=&#34;0&#34; marginwidth=&#34;0&#34;&gt;Loading…&lt;/iframe&gt;</description>
       
     </item>
     
     <item>
       <title></title>
-      <link>http://localhost:1313/traveler-camps/new-job-site/</link>
+      <link>https://krh5284.github.io/traveler-camps/new-job-site/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/traveler-camps/new-job-site/</guid>
+      <guid>https://krh5284.github.io/traveler-camps/new-job-site/</guid>
       <description>&lt;iframe src=&#34;https://docs.google.com/forms/d/e/1FAIpQLSfVjETHhX0LLpKpLEvMJSdG7fqsAo2oZYNRMkdzwovjE4zaqA/viewform?embedded=true&#34; width=&#34;640&#34; height=&#34;625&#34; frameborder=&#34;0&#34; marginheight=&#34;0&#34; marginwidth=&#34;0&#34;&gt;Loading…&lt;/iframe&gt;</description>
       
     </item>
     
     <item>
       <title>Map</title>
-      <link>http://localhost:1313/traveler-camps/map/</link>
+      <link>https://krh5284.github.io/traveler-camps/map/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/traveler-camps/map/</guid>
+      <guid>https://krh5284.github.io/traveler-camps/map/</guid>
       <description>&lt;iframe src=&#34;https://www.google.com/maps/d/u/0/embed?mid=18Fm1vxu-vVOAHJwbLe_2nlCTISd182Q&amp;ehbc=2E312F&amp;noprof=1&#34; width=&#34;640&#34; height=&#34;480&#34;&gt;&lt;/iframe&gt;</description>
       
     </item>
