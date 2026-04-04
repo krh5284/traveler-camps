@@ -1,28 +1,28 @@
 baseURL: https://krh5284.github.io/traveler-camps/
 locale: en-us
 title: Traveler Camps
-theme: hugo-PaperMod
+theme: blowfish
 
 menu:
   main:
     - identifier: map
       name: Map
-      url: /map/
+      pageRef: map
       weight: 10
 
     - identifier: new-job-site
       name: New Job Site Request
-      url: /new-job-site/
+      pageRef: new-job-site
       weight: 20
       
     - identifier: new-campgroud
       name: New Campground Request
-      url: /new-campground/
+      pageRef: new-campground
       weight: 30
 
     - identifier: contact-us
       name: Contact Us
-      url: /contact-us/
+      pageRef: contact-us
       weight: 40
 
     
