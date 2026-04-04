@@ -16,19 +16,24 @@ pageRef = "list-view"
 weight = 10
 
 [[main]]
+name = "Map"
+pageRef = "map"
+weight = 20
+
+[[main]]
 name = "New Job Site Request"
 pageRef = "new-job-site"
-weight = 20
+weight = 30
 
 [[main]]
 name = "New Campground Request"
 pageRef = "new-campground"
-weight = 30
+weight = 40
 
 [[main]]
 name = "Contact Us"
 pageRef = "contact-us"
-weight = 40
+weight = 50
 
 #[[main]]
 #  name = "Parent"
