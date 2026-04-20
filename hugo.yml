@@ -11,12 +11,12 @@ menu:
       weight: 10
 
     - identifier: new-job-site
-      name: New Job Site Request
+      name: Add Job Site to Map
       pageRef: new-job-site
       weight: 20
       
     - identifier: new-campgroud
-      name: New Campground Request
+      name: Add Campground to Map
       pageRef: new-campground
       weight: 30
 
@@ -49,6 +49,9 @@ caches:
     dir: :cacheDir/modules
     maxAge: -1
 
+services:
+  disqus:
+    shortname: kelliebernhardt
 
 params:
   homeInfoParams:
