@@ -31,8 +31,15 @@ Use 'Ctrl + F' ('⌘ + F' on Mac) to search for specific locations on this page
   {{< /accordionItem >}}
 
 
+{{< accordionItem title="Big Cedar Industrial Center" open=false >}}
+**Cedar Rapid, IA | Industrial Park | [Big Cedar Industrial Center on Google Maps](https://www.google.com/maps/place/Big+Cedar+industrial+Center/@41.905736,-91.715249,624m/data=!3m2!1e3!4b1!4m6!3m5!1s0x87e457002d2cfc03:0xe9d310a01e16a977!8m2!3d41.905736!4d-91.715249!16s%2Fg%2F11yvh2q9ht?entry=ttu&g_ep=EgoyMDI2MDQxNS4wIKXMDSoASAFQAw%3D%3D)**
+
+- Basswood Resort | <https://basswoodresort.com/?utm_source=google&utm_medium=maps>
+{{< /accordionItem >}}
+
+
 {{< accordionItem title="Tahoe-Reno Industrial Center" open=false >}}
-**Sparks, NV | Industrial Park | [Tesla Gigafactory Nevada](https://www.google.com/maps/place/Tesla+Gigafactory+Nevada/data=!4m2!3m1!1s0x0:0x7e66b0fa4fe55cd8?sa=X&ved=1t:2428&ictx=111)**
+**Sparks, NV | Industrial Park | [Tesla Gigafactory Nevada on Google Maps](https://www.google.com/maps/place/Tesla+Gigafactory+Nevada/data=!4m2!3m1!1s0x0:0x7e66b0fa4fe55cd8?sa=X&ved=1t:2428&ictx=111)**
 
 - Whispering River Ranch RV Park | <https://wrrrvp.com/>
 {{< /accordionItem >}}
