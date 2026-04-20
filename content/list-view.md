@@ -31,6 +31,13 @@ Use 'Ctrl + F' ('⌘ + F' on Mac) to search for specific locations on this page
   {{< /accordionItem >}}
 
 
+{{< accordionItem title="Tahoe-Reno Industrial Center" open=false >}}
+**Sparks, NV | Industrial Park | [Tesla Gigafactory Nevada](https://www.google.com/maps/place/Tesla+Gigafactory+Nevada/data=!4m2!3m1!1s0x0:0x7e66b0fa4fe55cd8?sa=X&ved=1t:2428&ictx=111)**
+
+- Whispering River Ranch RV Park | <https://wrrrvp.com/>
+{{< /accordionItem >}}
+
+
 {{< accordionItem title="Pixelle Specialty Solutions (Gladfelter Paper Mill)" open=false >}}
 **Spring Grove, PA | Paper Mill | [Pixelle Specialty Solutions on Google Maps](https://www.google.com/maps/place/Pixelle+Specialty+Solutions/@39.8716272,-76.865352,711m/data=!3m1!1e3!4m7!3m6!1s0x89c85fe6b07c594d:0x56491a81304613b8!4b1!8m2!3d39.8716272!4d-76.865352!16s%2Fg%2F11ffm68nzr?entry=ttu&g_ep=EgoyMDI2MDQwMS4wIKXMDSoASAFQAw%3D%3D)**
 
