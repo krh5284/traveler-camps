@@ -42,6 +42,10 @@ Use 'Ctrl + F' ('⌘ + F' on Mac) to search for specific locations on this page
 
 {{< accordionItem title="Lilly Lebanon Plant 1 (Eli Lilly Indiana)" open=false >}}
 **Lebanon, IN | Pharmaceutical | [Lilly Lebanon Plant 1 on Google Maps](https://www.google.com/maps/place/Lilly+Lebanon+Plant+1/@40.0983086,-86.4932699,708m/data=!3m2!1e3!4b1!4m6!3m5!1s0x881345006d585e59:0xa39fc84df65fc221!8m2!3d40.0983086!4d-86.4932699!16s%2Fg%2F11mzplrv_l?entry=ttu&g_ep=EgoyMDI2MDQwMS4wIKXMDSoASAFQAw%3D%3D)**
+
+- Quarry Lake Campground | <https://www.facebook.com/p/Quarry-Lake-Campground-100063613568359/>
+
+- S&H Campground | <https://www.sandhcampground.com/?utm_source=google&utm_medium=organic&utm_campaign=gmb>
  {{< /accordionItem >}}
 
 
