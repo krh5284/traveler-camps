@@ -1,6 +1,7 @@
 +++
 draft = false
 title = 'List View'
+showComments = true
 +++
 
 Use 'Ctrl + F' ('⌘ + F' on Mac) to search for specific locations on this page
@@ -92,3 +93,5 @@ Use 'Ctrl + F' ('⌘ + F' on Mac) to search for specific locations on this page
 {{< /accordion >}}
 
 Use 'Ctrl + F' ('⌘ + F' on Mac) to search for specific locations on this page
+
+{{ partials "comments.html" . }}

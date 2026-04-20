@@ -21,12 +21,12 @@ pageRef = "map"
 weight = 20
 
 [[main]]
-name = "New Job Site Request"
+name = "Add Job Site to Map"
 pageRef = "new-job-site"
 weight = 30
 
 [[main]]
-name = "New Campground Request"
+name = "Add Campground to Map"
 pageRef = "new-campground"
 weight = 40
 
