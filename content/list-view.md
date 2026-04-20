@@ -32,7 +32,14 @@ Use 'Ctrl + F' ('⌘ + F' on Mac) to search for specific locations on this page
 
 
 {{< accordionItem title="Big Cedar Industrial Center" open=false >}}
-**Cedar Rapid, IA | Industrial Park | [Big Cedar Industrial Center on Google Maps](https://www.google.com/maps/place/Big+Cedar+industrial+Center/@41.905736,-91.715249,624m/data=!3m2!1e3!4b1!4m6!3m5!1s0x87e457002d2cfc03:0xe9d310a01e16a977!8m2!3d41.905736!4d-91.715249!16s%2Fg%2F11yvh2q9ht?entry=ttu&g_ep=EgoyMDI2MDQxNS4wIKXMDSoASAFQAw%3D%3D)**
+**Cedar Rapids, IA | Industrial Park | [Big Cedar Industrial Center on Google Maps](https://www.google.com/maps/place/Big+Cedar+industrial+Center/@41.905736,-91.715249,624m/data=!3m2!1e3!4b1!4m6!3m5!1s0x87e457002d2cfc03:0xe9d310a01e16a977!8m2!3d41.905736!4d-91.715249!16s%2Fg%2F11yvh2q9ht?entry=ttu&g_ep=EgoyMDI2MDQxNS4wIKXMDSoASAFQAw%3D%3D)**
+
+- Amana RV Park & Event Center | <http://www.amanarvpark.com/>
+{{< /accordionItem >}}
+
+
+{{< accordionItem title="Meta Data Center Kansas City" open=false >}}
+**Kansis City, MO | Data Center | [Meta Data Center - Kansas City (KCM) on Google Maps](https://www.google.com/maps/place/Meta+Data+Center+-+Kansas+City+(KCM)/@39.3248735,-94.6009517,649m/data=!3m2!1e3!4b1!4m6!3m5!1s0x87c05b0071379d2f:0x5598757fc5c63edf!8m2!3d39.3248735!4d-94.6009517!16s%2Fg%2F11wtls76y1?entry=ttu&g_ep=EgoyMDI2MDQxNS4wIKXMDSoASAFQAw%3D%3D)**
 
 - Basswood Resort | <https://basswoodresort.com/?utm_source=google&utm_medium=maps>
 {{< /accordionItem >}}
