@@ -14,9 +14,13 @@ Our site is new and our map is incomplete. Please help us add to the map by foll
 Add Job Site to Map
 {{< /button >}}
 
+
+
 {{< button href="new-campground" >}}
 Add Campground to Map
 {{< /button >}}
+
+
 
 {{< rawhtml >}}
 
