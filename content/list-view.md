@@ -33,26 +33,26 @@ Use 'Ctrl + F' ('⌘ + F' on Mac) to search for specific locations on this page
 
 - [Boise Riverside RV Park]({{% relref "campgrounds/boise-riverside-rv-park" %}})
 
-- Center Point RV Park | <https://centerpointrv.com/>
+- [Center Point RV Park]({{% relref "campgrounds/center-point-rv-park" %}})
 
-- Lake Point Campground & RV Resort | <https://www.lakepointcampground.com/>
+- [Lake Point Campground & RV Resort]({{% relref "campgrounds/lake-point-campground-rv-resort" %}})
 
-- Idahome RV Resort | <https://www.idahomerv.com/>
+- [Idahome RV Resort]({{% relref "campgrounds/idahome-rv-resort" %}})
 
-- Mountain Home RV Park | <https://www.g7rvresorts.com/rv-park/mountain-home/>
+- [Mountain Home RV Park]({{% relref "campgrounds/mountain-home-rv-park" %}})
 
-- Sun Creek Point RV Park | <https://suncreekrv.com/>
+- [Sun Creek Point RV Park]({{% relref "campgrounds/sun-creek-point-rv-park" %}})
 
-- Hi Valley Rv Park | <https://www.g7rvresorts.com/rv-park/hi-valley-rv-park/hi-valley/>
+- [Hi Valley RV Park]({{% relref "campgrounds/hi-valley-rv-park" %}})
   {{< /accordionItem >}}
 
 
 {{< accordionItem title="IL - Wood River Refinery (Phillips 66 Wood River)" open=false >}}
 **Roxana, IL | Refinery | [Wood River Refinery Badging Parking on Google Maps](https://www.google.com/maps/place/Wood+River+Refinery+Badging+Parking/@38.8355588,-90.0527845,721m/data=!3m2!1e3!4b1!4m6!3m5!1s0x87df59007be21e5b:0x6501ad54f79e5688!8m2!3d38.8355588!4d-90.0527845!16s%2Fg%2F11zj6gpp6x?entry=ttu&g_ep=EgoyMDI2MDQwMS4wIKXMDSoASAFQAw%3D%3D)**
 
-- Trails End RV Campground | <https://trailsendcampgroundrv.com/>
+- [Trails End RV Campground]({{% relref "campgrounds/trails-end-rv-campground" %}})
 
-- 5 Diamond Campgrounds | <https://www.riversandroutes.com/directory/5-diamond-campground/>
+- [5 Diamond Campground]({{% relref "campgrounds/5-diamond-campground" %}})
 {{< /accordionItem >}}
 
 
