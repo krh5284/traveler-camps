@@ -21,19 +21,24 @@ pageRef = "map"
 weight = 20
 
 [[main]]
+name = "Individual Campgrounds"
+pageRef = "campgrounds"
+weight = 30
+
+[[main]]
 name = "Add Job Site to Map"
 pageRef = "new-job-site"
-weight = 30
+weight = 40
 
 [[main]]
 name = "Add Campground to Map"
 pageRef = "new-campground"
-weight = 40
+weight = 50
 
 [[main]]
 name = "Contact Us"
 pageRef = "contact-us"
-weight = 50
+weight = 60
 
 #[[main]]
 #  name = "Parent"

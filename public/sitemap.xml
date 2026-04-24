@@ -4,7 +4,6 @@
 
   <url>
     <loc>https://github.com/krh5284/traveler-camps/</loc>
-    <lastmod>2026-04-04T10:33:41-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
@@ -24,12 +23,127 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://github.com/krh5284/traveler-camps/campgrounds/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://github.com/krh5284/traveler-camps/campgrounds/boise-riverside-rv-park/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://github.com/krh5284/traveler-camps/campgrounds/boise-rv-travel-park/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://github.com/krh5284/traveler-camps/campgrounds/center-point-rv-park/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://github.com/krh5284/traveler-camps/campgrounds/hi-valley-rv-park/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://github.com/krh5284/traveler-camps/campgrounds/idahome-rv-resort/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://github.com/krh5284/traveler-camps/campgrounds/lake-point-campground-rv-resort/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://github.com/krh5284/traveler-camps/campgrounds/mountain-home-rv-park/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://github.com/krh5284/traveler-camps/campgrounds/mountain-view-rv-park/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://github.com/krh5284/traveler-camps/campgrounds/sun-creek-point-rv-park/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://github.com/krh5284/traveler-camps/campgrounds/5-diamond-campground/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://github.com/krh5284/traveler-camps/campgrounds/trails-end-rv-campground/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://github.com/krh5284/traveler-camps/campgrounds/kamp-indy/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://github.com/krh5284/traveler-camps/campgrounds/s-h-campground/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://github.com/krh5284/traveler-camps/campgrounds/amana-rv-park/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://github.com/krh5284/traveler-camps/list-view/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://github.com/krh5284/traveler-camps/map/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://github.com/krh5284/traveler-camps/campgrounds/woodlands-camping-resort/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://github.com/krh5284/traveler-camps/campgrounds/basswood-resort/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://github.com/krh5284/traveler-camps/campgrounds/whispering-river-ranch-rv-park/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://github.com/krh5284/traveler-camps/campgrounds/four-seasons-family-campground/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://github.com/krh5284/traveler-camps/campgrounds/ben-franklin-rv-park/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://github.com/krh5284/traveler-camps/campgrounds/cedar-lake-family-campground/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://github.com/krh5284/traveler-camps/campgrounds/chyttles-farm-campground/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://github.com/krh5284/traveler-camps/campgrounds/wells-creek-rv-park/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
