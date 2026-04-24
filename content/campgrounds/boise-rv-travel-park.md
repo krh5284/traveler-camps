@@ -1,6 +1,6 @@
 +++
 draft = false
-title = 'ID - Boise RV Travel Park'
+title = 'Idaho - Boise RV Travel Park'
 +++
 
 Website - <http://www.boiservtravelpark.com>

@@ -1,6 +1,6 @@
 +++
 draft = false
-title = 'NJ - Four Seasons Family Campground'
+title = 'New Jersey - Four Seasons Family Campground'
 +++
 
 Website - <https://www.fourseasonscamping.com/>

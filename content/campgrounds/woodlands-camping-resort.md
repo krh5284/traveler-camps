@@ -1,6 +1,6 @@
 +++
 draft = false
-title = 'MD - Woodlands Camping Resort'
+title = 'Maryland - Woodlands Camping Resort'
 +++
 
 Website - <https://woodlandscampingresort.com/>

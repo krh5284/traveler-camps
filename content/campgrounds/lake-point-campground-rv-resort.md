@@ -1,6 +1,6 @@
 +++
 draft = false
-title = 'ID - Lake Point Campground & RV Resort'
+title = 'Idaho - Lake Point Campground & RV Resort'
 +++
 
 Website - <https://www.lakepointcampground.com/>

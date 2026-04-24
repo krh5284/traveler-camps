@@ -1,6 +1,6 @@
 +++
 draft = false
-title = 'ID - Center Point RV Park'
+title = 'Idaho - Center Point RV Park'
 +++
 
 Website - <https://centerpointrv.com/>

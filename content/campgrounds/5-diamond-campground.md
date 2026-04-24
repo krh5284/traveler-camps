@@ -1,6 +1,6 @@
 +++
 draft = false
-title = 'IL - 5 Diamond Campground'
+title = 'Illinois - 5 Diamond Campground'
 +++
 
 Website - <https://www.facebook.com/5diamondcampground/>

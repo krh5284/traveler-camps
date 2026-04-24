@@ -1,6 +1,6 @@
 +++
 draft = false
-title = 'MO - Basswood Resort'
+title = 'Missouri - Basswood Resort'
 +++
 
 Website - <https://basswoodresort.com/?utm_source=google&utm_medium=maps>

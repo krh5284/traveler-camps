@@ -1,6 +1,6 @@
 +++
 draft = false
-title = 'ID - Boise Riverside RV Park'
+title = 'Idaho - Boise Riverside RV Park'
 +++
 
 Website - <https://www.boiseriversidervpark.com/>

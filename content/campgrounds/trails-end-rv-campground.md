@@ -1,6 +1,6 @@
 +++
 draft = false
-title = 'IL - Trails End RV Campground'
+title = 'Illinois - Trails End RV Campground'
 +++
 
 Website - <https://trailsendcampgroundrv.com/>
