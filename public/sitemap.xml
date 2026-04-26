@@ -88,6 +88,11 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://github.com/krh5284/traveler-camps/campgrounds/quarry-lake-campground/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://github.com/krh5284/traveler-camps/campgrounds/s-h-campground/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

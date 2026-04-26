@@ -61,6 +61,8 @@ Use 'Ctrl + F' ('⌘ + F' on Mac) to search for specific locations on this page
 
 - [Kamp Indy (Lake Haven Retreat)]({{% relref "campgrounds/kamp-indy" %}})
 
+- [Quarry Lake Campground]({{% relref "campgrounds/quarry-lake-campground" %}})
+
 - [S&H Campground]({{% relref "campgrounds/s-h-campground" %}})
  {{< /accordionItem >}}
 
