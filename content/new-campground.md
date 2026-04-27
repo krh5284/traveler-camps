@@ -1,8 +1,12 @@
 +++
 draft = false
+layout = "simple"
 +++
 
 {{< rawhtml >}}
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScnXxlXHPSEs-Dvq_OZQUxlkOTJYXgadvNW20OpeKrRbYUtww/viewform?embedded=true" width="640" height="625" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+<iframe style="border: 0; width:100%; height: 875px; overflow: auto;" src="https://docs.google.com/forms/d/e/1FAIpQLScnXxlXHPSEs-Dvq_OZQUxlkOTJYXgadvNW20OpeKrRbYUtww/viewform?embedded=true">
+
+</iframe> 
 
 {{< /rawhtml >}}

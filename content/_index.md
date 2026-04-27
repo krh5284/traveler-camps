@@ -7,7 +7,7 @@ title = ''
 
 The goal of this site is to provide one location where traveling workers can find campgrounds and RV parks near their job site.
 
-Our site is new and our map is incomplete. Please help us add to the map by following the links at the top right of the page.
+Our site is new and our map is incomplete. Please help us add to the map by following the links below or at the top of the page.
 
 <div class="flex gap-4" style="margin-bottom: 2rem;">
 {{< button href="new-job-site" >}}
