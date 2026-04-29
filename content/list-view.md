@@ -25,6 +25,14 @@ Use 'Ctrl + F' ('⌘ + F' on Mac) to search for specific locations on this page
 {{< /accordionItem >}}
 
 
+<!-- Cape Canaveral -->
+{{< accordionItem title="Florida - Cape Canaveral" open=false >}}
+**[Cape Canaveral Space Force Station](https://www.google.com/maps/place/Cape+Canaveral+Space+Force+Station/@28.4886723,-80.575399,737m/data=!3m2!1e3!4b1!4m6!3m5!1s0x88e0a51ee4703cd3:0x909e35759b9e7345!8m2!3d28.4886723!4d-80.5728241!16zL20vMDFzbWts?entry=ttu&g_ep=EgoyMDI2MDQyNi4wIKXMDSoASAFQAw%3D%3D)**
+
+- [Northgate Mobile Home & RV Park]({{% relref "campgrounds/northgate-park" %}})
+{{< /accordionItem >}}
+
+
 <!-- Micron Boise -->
   {{< accordionItem title="Idaho - Micron Technology (Micron Boise)" open=false >}}
  **Boise, ID | Chip Manufacturer | [Micron Technology on Google Maps](https://www.google.com/maps/place/Micron+Technology/@43.5306658,-116.1504033,671m/data=!3m2!1e3!4b1!4m6!3m5!1s0x54aef63a0cb741c7:0x185e9e8792e08ed!8m2!3d43.5306658!4d-116.1504033!16s%2Fg%2F1tdqzfmg?entry=ttu&g_ep=EgoyMDI2MDQwMS4wIKXMDSoASAFQAw%3D%3D)**
@@ -84,6 +92,8 @@ Use 'Ctrl + F' ('⌘ + F' on Mac) to search for specific locations on this page
 **Cedar Rapids, IA | Industrial Park | [Big Cedar Industrial Center on Google Maps](https://www.google.com/maps/place/Big+Cedar+industrial+Center/@41.905736,-91.715249,624m/data=!3m2!1e3!4b1!4m6!3m5!1s0x87e457002d2cfc03:0xe9d310a01e16a977!8m2!3d41.905736!4d-91.715249!16s%2Fg%2F11yvh2q9ht?entry=ttu&g_ep=EgoyMDI2MDQxNS4wIKXMDSoASAFQAw%3D%3D)**
 
 - [Amana RV Park & Event Center]({{% relref "campgrounds/amana-rv-park" %}})
+
+- [Independence RV Park & Campground]({{% relref "campgrounds/independence-rv-park" %}})
 {{< /accordionItem >}}
 
 
@@ -108,6 +118,17 @@ Use 'Ctrl + F' ('⌘ + F' on Mac) to search for specific locations on this page
 **Sparks, NV | Industrial Park | [Tesla Gigafactory Nevada on Google Maps](https://www.google.com/maps/place/Tesla+Gigafactory+Nevada/data=!4m2!3m1!1s0x0:0x7e66b0fa4fe55cd8?sa=X&ved=1t:2428&ictx=111)**
 
 - [Whispering River Ranch RV Park]({{% relref "campgrounds/whispering-river-ranch-rv-park" %}})
+{{< /accordionItem >}}
+
+
+<!-- Data Centers, OH -->
+{{< accordionItem title="Ohio - Columbus, OH Data Centers (New Albany Data Center)" open=false >}}
+**Data Centers, Columbus, OH area**
+- [Lazy River at Granville]({{% relref "campgrounds/lazy-river" %}})
+
+- [Rippling Stream Campground]({{% relref "campgrounds/rippling-stream-campground" %}})
+
+- [Tree Haven Campground]({{% relref "campgrounds/tree-haven-campground" %}})
 {{< /accordionItem >}}
 
 
@@ -147,7 +168,7 @@ Use 'Ctrl + F' ('⌘ + F' on Mac) to search for specific locations on this page
 
 <!-- Llano Data Center, Amarillo -->
 {{< accordionItem title="Texas - Project LLano (Llano Data Center Amarillo) " open=false >}}
-**Claude, TX | Data Center |[Llano Project](https://www.google.com/maps/place/Llano+project/@35.0170099,-101.3146143,687m/data=!3m2!1e3!4b1!4m6!3m5!1s0x8700e10069467101:0xe2c61c86aa2dac17!8m2!3d35.0170099!4d-101.3120394!16s%2Fg%2F11xd33jn_v?entry=ttu&g_ep=EgoyMDI2MDQyNi4wIKXMDSoASAFQAw%3D%3D)** 
+**Claude, TX | Data Center | [Llano Project](https://www.google.com/maps/place/Llano+project/@35.0170099,-101.3146143,687m/data=!3m2!1e3!4b1!4m6!3m5!1s0x8700e10069467101:0xe2c61c86aa2dac17!8m2!3d35.0170099!4d-101.3120394!16s%2Fg%2F11xd33jn_v?entry=ttu&g_ep=EgoyMDI2MDQyNi4wIKXMDSoASAFQAw%3D%3D)** 
 
 {{< /accordionItem >}}
 {{< /accordion >}}
