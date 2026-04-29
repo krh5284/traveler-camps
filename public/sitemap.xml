@@ -28,6 +28,16 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://github.com/krh5284/traveler-camps/campgrounds/evans-rv-park/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://github.com/krh5284/traveler-camps/campgrounds/northgate-park/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://github.com/krh5284/traveler-camps/campgrounds/boise-riverside-rv-park/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -98,7 +108,17 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://github.com/krh5284/traveler-camps/campgrounds/shamrock-hills-rv-park/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://github.com/krh5284/traveler-camps/campgrounds/amana-rv-park/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://github.com/krh5284/traveler-camps/campgrounds/independence-rv-park/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
@@ -133,6 +153,26 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://github.com/krh5284/traveler-camps/campgrounds/niagara-shores-campground/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://github.com/krh5284/traveler-camps/campgrounds/lazy-river/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://github.com/krh5284/traveler-camps/campgrounds/rippling-stream-campground/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://github.com/krh5284/traveler-camps/campgrounds/tree-haven-campground/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://github.com/krh5284/traveler-camps/campgrounds/ben-franklin-rv-park/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -144,6 +184,11 @@
   </url>
   <url>
     <loc>https://github.com/krh5284/traveler-camps/campgrounds/chyttles-farm-campground/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://github.com/krh5284/traveler-camps/campgrounds/cooks-lake-rv/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
