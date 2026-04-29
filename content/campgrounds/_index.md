@@ -1,7 +1,7 @@
 +++
 draft = false
 title = 'Campgrounds'
-showChildren = false
+layout = "simple"
 +++
 
 {{< accordion mode="open" separated=true >}}

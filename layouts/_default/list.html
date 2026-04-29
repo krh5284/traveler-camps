@@ -40,7 +40,7 @@
     </div>
   </section>
 
-  {{/* Article Grid */}}
+    {{/* Article Grid */}}
   {{ if gt .Pages 0 }}
     {{ $cardView := .Params.cardView | default (site.Params.list.cardView | default false) }}
     {{ $cardViewScreenWidth := .Params.cardViewScreenWidth | default (site.Params.list.cardViewScreenWidth | default false) }}
