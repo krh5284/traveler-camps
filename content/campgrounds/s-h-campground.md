@@ -12,4 +12,5 @@ Website - <https://www.sandhcampground.com/?utm_source=google&utm_medium=organic
 {{< keywordList >}}
 {{< keyword icon="check" >}} Full Hookups {{< /keyword >}}
 {{< keyword icon="check" >}} 50 Amp Electric {{< /keyword >}}
+{{< keyword icon="check" >}} Open Year-round {{< /keyword >}}
 {{< /keywordList >}}

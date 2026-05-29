@@ -11,4 +11,5 @@ Website - <https://trailsendcampgroundrv.com/>
 {{< keywordList >}}
 {{< keyword icon="check" >}} Full Hookups {{< /keyword >}}
 {{< keyword icon="check" >}} 50 Amp Electric {{< /keyword >}}
+{{< keyword icon="check" >}} Open Year-round {{< /keyword >}}
 {{< /keywordList >}}

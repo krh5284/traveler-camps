@@ -10,4 +10,5 @@ Website - <https://www.facebook.com/p/Chyttles-Farm-Campground-61576853605043/>
 {{< keywordList >}}
 {{< keyword icon="check" >}} Full Hookups {{< /keyword >}}
 {{< keyword icon="check" >}} 50 Amp Electric {{< /keyword >}}
+{{< keyword icon="check" >}} Open Year-round {{< /keyword >}}
 {{< /keywordList >}}
