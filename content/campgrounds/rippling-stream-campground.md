@@ -9,3 +9,6 @@ Website - <https://www.ripplingstreamcampground.com/>
 
 [RV Life Page](https://campgrounds.rvlife.com/regions/ohio/baltimore/rippling-stream-campground-251186)
 
+{{< keywordList >}}
+{{< keyword icon="check" >}} Open Year-round {{< /keyword >}}
+{{< /keywordList >}}

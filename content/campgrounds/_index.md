@@ -27,15 +27,17 @@ layout = "simple"
 
 - [Center Point RV Park]({{% relref "campgrounds/center-point-rv-park" %}})
 
-- [Lake Point Campground & RV Resort]({{% relref "campgrounds/lake-point-campground-rv-resort" %}})
+- [Hi Valley RV Park]({{% relref "campgrounds/hi-valley-rv-park" %}})
 
 - [Idahome RV Resort]({{% relref "campgrounds/idahome-rv-resort" %}})
+
+- [Lake Point Campground & RV Resort]({{% relref "campgrounds/lake-point-campground-rv-resort" %}})
 
 - [Mountain Home RV Park]({{% relref "campgrounds/mountain-home-rv-park" %}})
 
 - [Sun Creek Point RV Park]({{% relref "campgrounds/sun-creek-point-rv-park" %}})
 
-- [Hi Valley RV Park]({{% relref "campgrounds/hi-valley-rv-park" %}})
+
 {{< /accordionItem >}}
 
 
@@ -117,9 +119,9 @@ layout = "simple"
  {{< accordionItem title="Tennessee" open=false >}}
 - [Chyttle’s Farm & Campground]({{% relref "campgrounds/chyttles-farm-campground" %}})
 
-- [Wells Creek RV Park]({{% relref "campgrounds/wells-creek-rv-park" %}})
-
 - [Cook's Lake RV Resort and Campground]({{% relref "campgrounds/cooks-lake-rv" %}})
+
+- [Wells Creek RV Park]({{% relref "campgrounds/wells-creek-rv-park" %}})
 {{< /accordionItem >}}
 
 {{< /accordion >}}

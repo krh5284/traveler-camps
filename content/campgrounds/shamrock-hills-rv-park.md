@@ -10,4 +10,5 @@ Website - <https://shamrockhillsrv.com/>
 
 {{< keywordList >}}
 {{< keyword icon="check" >}} Full Hookups {{< /keyword >}}
+{{< keyword icon="check" >}} Open Year-round {{< /keyword >}}
 {{< /keywordList >}}
