@@ -1,6 +1,15 @@
 +++
 draft = false
-title = 'Ohio - Tree Haven Campground'
+title = "Ohio - Tree Haven Campground"
+state = "Ohio"
+location = "Westerville"
+website = "http://www.treehavencampground.site/index.html"
+google_reviews_url = "https://www.google.com/travel/search?q=tree%20haven%20campground&g2lb=4965990%2C72471280%2C72560029%2C72573224%2C72647020%2C72686036%2C72799179%2C72803964%2C72882230%2C72958624%2C73059275%2C73064764%2C121608706&hl=en-US&gl=us&cs=1&ssta=1&ts=CAEaKgooEiYyJDB4ODgzODVlOWU1ODRlMzg5MzoweDNiNjA1NTBlNzgzN2Y5Mg&qs=CAEyE0Nnb0lrdi1Odkk2cWdkc0RFQUU4Ag&ap=ugEHcmV2aWV3cw&ictx=111&ved=0CAAQ5JsGahcKEwjYld-K3JGUAxUAAAAAHQAAAAAQBA"
+rvlife_url = "https://campgrounds.rvlife.com/regions/ohio/westerville/tree-haven-campground-4261"
+user_verified = true
+full_hookups = false
+amp_50_electric = true
+open_year_round = false
 +++
 
 Website - <http://www.treehavencampground.site/index.html>
@@ -10,5 +19,6 @@ Website - <http://www.treehavencampground.site/index.html>
 [RV Life Page](https://campgrounds.rvlife.com/regions/ohio/westerville/tree-haven-campground-4261)
 
 {{< keywordList >}}
+{{< keyword icon="check" >}} User Verified {{< /keyword >}}
 {{< keyword icon="check" >}} 50 Amp Electric {{< /keyword >}}
 {{< /keywordList >}}
