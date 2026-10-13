@@ -11,10 +11,10 @@
 # ordered by weight from lowest to highest.
 
 
-#[[main]]
-#name = "Map"
-#pageRef = "map"
-#weight = 20
+[[main]]
+name = "Map"
+pageRef = "map"
+weight = 20
 
 [[main]]
 name = "Individual Campgrounds"
