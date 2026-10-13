@@ -1,0 +1,150 @@
+{{/*
+  Faceted search/filter UI for the campgrounds directory.
+  Reads the full campground list from data/campgrounds.json (exposed by Hugo
+  as .Site.Data.campgrounds) and renders it as a filterable grid of cards.
+  Filtering happens client-side in the browser -- no build step needed when
+  data/campgrounds.json changes, just re-run scripts/generate_campgrounds.py
+  to create the matching pages.
+
+  Usage: {{< campground-finder >}}
+*/}}
+
+{{ $campgrounds := .Site.Data.campgrounds }}
+{{ $states := slice }}
+{{ range $campgrounds }}
+  {{ $states = $states | append .state }}
+{{ end }}
+{{ $states = $states | uniq | sort }}
+
+<div id="campground-finder" class="not-prose">
+  <div class="flex flex-col gap-4 rounded-lg border border-neutral-200 bg-neutral-50 p-4 dark:border-neutral-700 dark:bg-neutral-800 md:flex-row md:items-start md:justify-between">
+    <div class="flex-1">
+      <label for="cf-search" class="sr-only">Search campgrounds</label>
+      <input
+        id="cf-search"
+        type="text"
+        placeholder="Search by name or city..."
+        class="w-full rounded-md border border-neutral-300 bg-white px-3 py-2 text-sm text-neutral-900 placeholder-neutral-400 focus:border-primary-500 focus:outline-none focus:ring-1 focus:ring-primary-500 dark:border-neutral-600 dark:bg-neutral-900 dark:text-neutral-100"
+      />
+    </div>
+
+    <div class="flex-1">
+      <label for="cf-state" class="sr-only">Filter by state</label>
+      <select
+        id="cf-state"
+        class="w-full rounded-md border border-neutral-300 bg-white px-3 py-2 text-sm text-neutral-900 focus:border-primary-500 focus:outline-none focus:ring-1 focus:ring-primary-500 dark:border-neutral-600 dark:bg-neutral-900 dark:text-neutral-100"
+      >
+        <option value="">All states</option>
+        {{ range $states }}
+          <option value="{{ . }}">{{ . }}</option>
+        {{ end }}
+      </select>
+    </div>
+
+    <div class="flex flex-wrap items-center gap-4 text-sm text-neutral-700 dark:text-neutral-300">
+      <label class="flex items-center gap-1.5">
+        <input type="checkbox" id="cf-full-hookups" class="rounded border-neutral-300 text-primary-600 focus:ring-primary-500 dark:border-neutral-600" />
+        Full hookups
+      </label>
+      <label class="flex items-center gap-1.5">
+        <input type="checkbox" id="cf-50amp" class="rounded border-neutral-300 text-primary-600 focus:ring-primary-500 dark:border-neutral-600" />
+        50 amp
+      </label>
+      <label class="flex items-center gap-1.5">
+        <input type="checkbox" id="cf-year-round" class="rounded border-neutral-300 text-primary-600 focus:ring-primary-500 dark:border-neutral-600" />
+        Open year-round
+      </label>
+    </div>
+  </div>
+
+  <p id="cf-count" class="mt-3 text-sm text-neutral-500 dark:text-neutral-400"></p>
+
+  <div id="cf-grid" class="mt-2 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+    {{ range $campgrounds }}
+      {{ $page := $.Site.GetPage (printf "/campgrounds/%s" .slug) }}
+      {{ if not $page }}
+        {{ warnf "campground-finder: no page found for slug %q -- check content/campgrounds/%s.md exists" .slug .slug }}
+      {{ end }}
+      <a
+        href="{{ with $page }}{{ .RelPermalink }}{{ else }}#{{ end }}"
+        class="cf-card block rounded-lg border border-neutral-200 p-4 no-underline transition hover:border-primary-400 hover:shadow-md dark:border-neutral-700 dark:hover:border-primary-500"
+        data-name="{{ lower .name }}"
+        data-location="{{ lower .location }}"
+        data-state="{{ .state }}"
+        data-full-hookups="{{ .full_hookups }}"
+        data-50amp="{{ .amp_50_electric }}"
+        data-year-round="{{ .open_year_round }}"
+      >
+        <p class="text-xs font-semibold uppercase tracking-wide text-primary-600 dark:text-primary-400">
+          {{ .state }}{{ with .location }} · {{ . }}{{ end }}
+        </p>
+        <p class="mt-1 font-semibold text-neutral-900 dark:text-neutral-100">{{ .name }}</p>
+        <div class="mt-2 flex flex-wrap gap-1.5">
+          {{ if .full_hookups }}<span class="rounded-full bg-primary-500 px-1.5 py-[1px] text-xs text-neutral-50 dark:bg-primary-400 dark:text-neutral-800">Full Hookups</span>{{ end }}
+          {{ if .amp_50_electric }}<span class="rounded-full bg-primary-500 px-1.5 py-[1px] text-xs text-neutral-50 dark:bg-primary-400 dark:text-neutral-800">50 Amp</span>{{ end }}
+          {{ if .open_year_round }}<span class="rounded-full bg-primary-500 px-1.5 py-[1px] text-xs text-neutral-50 dark:bg-primary-400 dark:text-neutral-800">Year-round</span>{{ end }}
+        </div>
+      </a>
+    {{ end }}
+  </div>
+
+  <p id="cf-empty" class="mt-6 hidden text-center text-sm text-neutral-500 dark:text-neutral-400">
+    No campgrounds match those filters.
+  </p>
+</div>
+
+<script>
+(function () {
+  var wrap = document.getElementById("campground-finder");
+  if (!wrap) return;
+
+  var searchInput = document.getElementById("cf-search");
+  var stateSelect = document.getElementById("cf-state");
+  var fullHookupsCb = document.getElementById("cf-full-hookups");
+  var amp50Cb = document.getElementById("cf-50amp");
+  var yearRoundCb = document.getElementById("cf-year-round");
+  var cards = Array.prototype.slice.call(wrap.querySelectorAll(".cf-card"));
+  var countEl = document.getElementById("cf-count");
+  var emptyEl = document.getElementById("cf-empty");
+
+  function applyFilters() {
+    var q = searchInput.value.trim().toLowerCase();
+    var state = stateSelect.value;
+    var needFullHookups = fullHookupsCb.checked;
+    var need50Amp = amp50Cb.checked;
+    var needYearRound = yearRoundCb.checked;
+    var visible = 0;
+
+    cards.forEach(function (card) {
+      var matchesQuery =
+        !q ||
+        card.dataset.name.indexOf(q) !== -1 ||
+        card.dataset.location.indexOf(q) !== -1;
+      var matchesState = !state || card.dataset.state === state;
+      var matchesFullHookups = !needFullHookups || card.dataset.fullHookups === "true";
+      var matches50Amp = !need50Amp || card.dataset["50amp"] === "true";
+      var matchesYearRound = !needYearRound || card.dataset.yearRound === "true";
+
+      var show =
+        matchesQuery &&
+        matchesState &&
+        matchesFullHookups &&
+        matches50Amp &&
+        matchesYearRound;
+
+      card.classList.toggle("hidden", !show);
+      if (show) visible++;
+    });
+
+    countEl.textContent = visible + " campground" + (visible === 1 ? "" : "s");
+    emptyEl.classList.toggle("hidden", visible !== 0);
+  }
+
+  [searchInput, stateSelect, fullHookupsCb, amp50Cb, yearRoundCb].forEach(function (el) {
+    el.addEventListener("input", applyFilters);
+    el.addEventListener("change", applyFilters);
+  });
+
+  applyFilters();
+})();
+</script>
