@@ -30,16 +30,6 @@
     </item>
     
     <item>
-      <title></title>
-      <link>http://localhost:1313/krh5284/traveler-camps/new-job-site/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/krh5284/traveler-camps/new-job-site/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
       <title>Colorado - Evans RV Park</title>
       <link>http://localhost:1313/krh5284/traveler-camps/campgrounds/evans-rv-park/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -265,16 +255,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/krh5284/traveler-camps/campgrounds/independence-rv-park/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>List View</title>
-      <link>http://localhost:1313/krh5284/traveler-camps/list-view/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/krh5284/traveler-camps/list-view/</guid>
       <description></description>
       
     </item>

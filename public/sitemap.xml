@@ -143,11 +143,6 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/krh5284/traveler-camps/list-view/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>http://localhost:1313/krh5284/traveler-camps/campgrounds/woodlands-camping-resort/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
