@@ -16,9 +16,9 @@ buildFuture = false
 
 enableEmoji = true
 
-[services]
-[services.googleAnalytics]
-  id = 'G-QW20S00NMD'
+#[services]
+#[services.googleAnalytics]
+  #id = 'G-QW20S00NMD'
 
 [pagination]
   pagerSize = 100
