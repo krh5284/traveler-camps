@@ -15,10 +15,10 @@ name = "List View"
 pageRef = "list-view"
 weight = 10
 
-[[main]]
-name = "Map"
-pageRef = "map"
-weight = 20
+#[[main]]
+#name = "Map"
+#pageRef = "map"
+#weight = 20
 
 [[main]]
 name = "Individual Campgrounds"
