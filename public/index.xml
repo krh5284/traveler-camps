@@ -30,16 +30,6 @@
     </item>
     
     <item>
-      <title></title>
-      <link>http://localhost:1313/krh5284/traveler-camps/new-job-site/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/krh5284/traveler-camps/new-job-site/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
       <title>Colorado - Evans RV Park</title>
       <link>http://localhost:1313/krh5284/traveler-camps/campgrounds/evans-rv-park/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -55,6 +45,16 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/krh5284/traveler-camps/campgrounds/northgate-park/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Georgia - Fair Harbor RV Park</title>
+      <link>http://localhost:1313/krh5284/traveler-camps/campgrounds/fair-harbor-rv-park/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/krh5284/traveler-camps/campgrounds/fair-harbor-rv-park/</guid>
       <description></description>
       
     </item>
@@ -170,6 +170,26 @@
     </item>
     
     <item>
+      <title>Indiana - Beckoning Woods Extended Stay RV Park</title>
+      <link>http://localhost:1313/krh5284/traveler-camps/campgrounds/beckoning-woods-extended-stay-rv-park/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/krh5284/traveler-camps/campgrounds/beckoning-woods-extended-stay-rv-park/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Indiana - Country View RV Park</title>
+      <link>http://localhost:1313/krh5284/traveler-camps/campgrounds/country-view-rv-park/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/krh5284/traveler-camps/campgrounds/country-view-rv-park/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
       <title>Indiana - Kamp Indy (Lake Haven Retreat)</title>
       <link>http://localhost:1313/krh5284/traveler-camps/campgrounds/kamp-indy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -210,6 +230,16 @@
     </item>
     
     <item>
+      <title>Indiana - Wolf’s Leisure Campground</title>
+      <link>http://localhost:1313/krh5284/traveler-camps/campgrounds/wolf-s-leisure-campground/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/krh5284/traveler-camps/campgrounds/wolf-s-leisure-campground/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
       <title>Iowa - Amana RV Park</title>
       <link>http://localhost:1313/krh5284/traveler-camps/campgrounds/amana-rv-park/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -225,26 +255,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/krh5284/traveler-camps/campgrounds/independence-rv-park/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>List View</title>
-      <link>http://localhost:1313/krh5284/traveler-camps/list-view/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/krh5284/traveler-camps/list-view/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Map</title>
-      <link>http://localhost:1313/krh5284/traveler-camps/map/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/krh5284/traveler-camps/map/</guid>
       <description></description>
       
     </item>
