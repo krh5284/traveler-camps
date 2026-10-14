@@ -6,6 +6,12 @@
   data/campgrounds.json changes, just re-run scripts/generate_campgrounds.py
   to create the matching pages.
 
+  Radius search: if a campground has "lat" and "lon" in data/campgrounds.json,
+  visitors can type any US town and pick a radius. The town lookup is loaded
+  lazily from static/data/us-places.json (build it with
+  scripts/build_us_places.py). Campgrounds without coordinates are simply left
+  out of radius results.
+
   Usage: {{< campground-finder >}}
 */}}
 
@@ -16,8 +22,8 @@
 {{ end }}
 {{ $states = $states | uniq | sort }}
 
-<div id="campground-finder" class="not-prose">
-  <div class="flex flex-col gap-4 rounded-lg border border-neutral-200 bg-neutral-50 p-4 dark:border-neutral-700 dark:bg-neutral-800 md:flex-row md:items-start md:justify-between">
+<div id="campground-finder" class="not-prose" data-places-url="{{ "data/us-places.json" | relURL }}">
+  <div class="grid grid-cols-1 gap-4 rounded-lg border border-neutral-200 bg-neutral-50 p-4 dark:border-neutral-700 dark:bg-neutral-800 md:grid-cols-2 md:items-start">
     <div class="flex-1">
       <label for="cf-search" class="sr-only">Search campgrounds</label>
       <input
@@ -55,6 +61,46 @@
         Open year-round
       </label>
     </div>
+
+    <div class="w-full">
+      <div class="flex flex-col gap-2 sm:flex-row sm:items-center">
+        <div class="relative flex-1">
+          <label for="cf-loc" class="sr-only">Near a town</label>
+          <input
+            id="cf-loc"
+            type="text"
+            autocomplete="off"
+            placeholder="Near a town, e.g. Boise, ID"
+            class="w-full rounded-md border border-neutral-300 bg-white px-3 py-2 text-sm text-neutral-900 placeholder-neutral-400 focus:border-primary-500 focus:outline-none focus:ring-1 focus:ring-primary-500 dark:border-neutral-600 dark:bg-neutral-900 dark:text-neutral-100"
+          />
+          <ul
+            id="cf-loc-list"
+            class="absolute z-10 mt-1 hidden max-h-60 w-full overflow-auto rounded-md border border-neutral-300 bg-white text-sm shadow-lg dark:border-neutral-600 dark:bg-neutral-900"
+          ></ul>
+        </div>
+        <label for="cf-radius" class="sr-only">Radius</label>
+        <select
+          id="cf-radius"
+          class="rounded-md border border-neutral-300 bg-white px-3 py-2 text-sm text-neutral-900 focus:border-primary-500 focus:outline-none focus:ring-1 focus:ring-primary-500 dark:border-neutral-600 dark:bg-neutral-900 dark:text-neutral-100"
+        >
+          <option value="10">Within 10 mi</option>
+          <option value="25">Within 25 mi</option>
+          <option value="50" selected>Within 50 mi</option>
+          <option value="100">Within 100 mi</option>
+          <option value="200">Within 200 mi</option>
+          <option value="500">Within 500 mi</option>
+          <option value="any">Any distance</option>
+        </select>
+        <button
+          type="button"
+          id="cf-locate"
+          class="rounded-md border border-neutral-300 bg-white px-3 py-2 text-sm text-neutral-700 hover:border-primary-400 dark:border-neutral-600 dark:bg-neutral-900 dark:text-neutral-200"
+        >
+          Use my location
+        </button>
+      </div>
+      <p id="cf-loc-msg" class="mt-1 hidden text-xs text-neutral-500 dark:text-neutral-400"></p>
+    </div>
   </div>
 
   <p id="cf-count" class="mt-3 text-sm text-neutral-500 dark:text-neutral-400"></p>
@@ -74,6 +120,8 @@
         data-full-hookups="{{ .full_hookups }}"
         data-50amp="{{ .amp_50_electric }}"
         data-year-round="{{ .open_year_round }}"
+        {{ with .lat }}data-lat="{{ . }}"{{ end }}
+        {{ with .lon }}data-lon="{{ . }}"{{ end }}
       >
         <p class="text-xs font-semibold uppercase tracking-wide text-primary-600 dark:text-primary-400">
           {{ .state }}{{ with .location }} · {{ . }}{{ end }}
@@ -84,6 +132,7 @@
           {{ if .amp_50_electric }}<span class="rounded-full bg-primary-500 px-1.5 py-[1px] text-xs text-neutral-50 dark:bg-primary-400 dark:text-neutral-800">50 Amp</span>{{ end }}
           {{ if .open_year_round }}<span class="rounded-full bg-primary-500 px-1.5 py-[1px] text-xs text-neutral-50 dark:bg-primary-400 dark:text-neutral-800">Year-round</span>{{ end }}
         </div>
+        <p class="cf-dist mt-2 hidden text-xs font-medium text-neutral-600 dark:text-neutral-300"></p>
       </a>
     {{ end }}
   </div>
@@ -103,17 +152,189 @@
   var fullHookupsCb = document.getElementById("cf-full-hookups");
   var amp50Cb = document.getElementById("cf-50amp");
   var yearRoundCb = document.getElementById("cf-year-round");
+  var locInput = document.getElementById("cf-loc");
+  var locList = document.getElementById("cf-loc-list");
+  var locMsg = document.getElementById("cf-loc-msg");
+  var radiusSelect = document.getElementById("cf-radius");
+  var locateBtn = document.getElementById("cf-locate");
+  var grid = document.getElementById("cf-grid");
   var cards = Array.prototype.slice.call(wrap.querySelectorAll(".cf-card"));
   var countEl = document.getElementById("cf-count");
   var emptyEl = document.getElementById("cf-empty");
+  var placesUrl = wrap.dataset.placesUrl;
 
+  // Original (template) order, so clearing the location restores it.
+  cards.forEach(function (card, i) {
+    card.dataset.idx = i;
+    var lat = parseFloat(card.dataset.lat);
+    var lon = parseFloat(card.dataset.lon);
+    card._lat = isNaN(lat) ? null : lat;
+    card._lon = isNaN(lon) ? null : lon;
+  });
+
+  var STATE_NAMES = {
+    AL: "Alabama", AK: "Alaska", AZ: "Arizona", AR: "Arkansas", CA: "California", CO: "Colorado",
+    CT: "Connecticut", DE: "Delaware", DC: "District of Columbia", FL: "Florida", GA: "Georgia",
+    HI: "Hawaii", ID: "Idaho", IL: "Illinois", IN: "Indiana", IA: "Iowa", KS: "Kansas",
+    KY: "Kentucky", LA: "Louisiana", ME: "Maine", MD: "Maryland", MA: "Massachusetts",
+    MI: "Michigan", MN: "Minnesota", MS: "Mississippi", MO: "Missouri", MT: "Montana",
+    NE: "Nebraska", NV: "Nevada", NH: "New Hampshire", NJ: "New Jersey", NM: "New Mexico",
+    NY: "New York", NC: "North Carolina", ND: "North Dakota", OH: "Ohio", OK: "Oklahoma",
+    OR: "Oregon", PA: "Pennsylvania", RI: "Rhode Island", SC: "South Carolina",
+    SD: "South Dakota", TN: "Tennessee", TX: "Texas", UT: "Utah", VT: "Vermont", VA: "Virginia",
+    WA: "Washington", WV: "West Virginia", WI: "Wisconsin", WY: "Wyoming", PR: "Puerto Rico"
+  };
+
+  // ---- town lookup (lazy-loaded) -------------------------------------------
+  var places = null;
+  var keys = null;
+  var placesPromise = null;
+
+  function loadPlaces() {
+    if (!placesPromise) {
+      placesPromise = fetch(placesUrl)
+        .then(function (r) {
+          if (!r.ok) throw new Error("HTTP " + r.status);
+          return r.json();
+        })
+        .then(function (data) {
+          places = data;
+          keys = data.map(function (p) { return p[0].toLowerCase(); });
+          return data;
+        })
+        .catch(function (err) {
+          placesPromise = null; // allow a retry
+          throw err;
+        });
+    }
+    return placesPromise;
+  }
+
+  function stateMatches(abbr, stateQuery) {
+    if (!stateQuery) return true;
+    var q = stateQuery.toLowerCase();
+    return abbr.toLowerCase() === q || (STATE_NAMES[abbr] || "").toLowerCase().indexOf(q) === 0;
+  }
+
+  function suggest(query, limit) {
+    var parts = query.split(",");
+    var town = parts[0].trim().toLowerCase();
+    var stateQ = parts.length > 1 ? parts.slice(1).join(",").trim() : "";
+    var out = [];
+    if (!town) return out;
+    for (var i = 0; i < places.length && out.length < limit; i++) {
+      if (keys[i].indexOf(town) === 0 && stateMatches(places[i][1], stateQ)) out.push(places[i]);
+    }
+    return out;
+  }
+
+  // ---- location state --------------------------------------------------------
+  var center = null; // {lat, lon, label}
+  var activeIdx = -1;
+  var shown = [];
+
+  function setMsg(text) {
+    locMsg.textContent = text || "";
+    locMsg.classList.toggle("hidden", !text);
+  }
+
+  function hideList() {
+    locList.classList.add("hidden");
+    locList.innerHTML = "";
+    shown = [];
+    activeIdx = -1;
+  }
+
+  function chooseCenter(place) {
+    center = { lat: place[2], lon: place[3], label: place[0] + ", " + place[1] };
+    locInput.value = center.label;
+    hideList();
+    setMsg("");
+    applyFilters();
+  }
+
+  function renderList() {
+    locList.innerHTML = "";
+    shown.forEach(function (p, i) {
+      var li = document.createElement("li");
+      li.textContent = p[0] + ", " + p[1];
+      li.className = "cursor-pointer px-3 py-2 text-neutral-800 hover:bg-neutral-100 dark:text-neutral-100 dark:hover:bg-neutral-800" + (i === activeIdx ? " bg-neutral-100 dark:bg-neutral-800" : "");
+      li.addEventListener("mousedown", function (e) { e.preventDefault(); chooseCenter(p); });
+      locList.appendChild(li);
+    });
+    locList.classList.toggle("hidden", shown.length === 0);
+  }
+
+  function onLocInput() {
+    var q = locInput.value.trim();
+    if (!q) {
+      center = null;
+      hideList();
+      setMsg("");
+      applyFilters();
+      return;
+    }
+    if (q.length < 2) { hideList(); return; }
+    loadPlaces()
+      .then(function () {
+        if (locInput.value.trim() !== q) return; // stale
+        shown = suggest(q, 8);
+        activeIdx = shown.length ? 0 : -1;
+        renderList();
+        setMsg(shown.length ? "" : "No matching town found. Try \u201cCity, ST\u201d.");
+      })
+      .catch(function () {
+        setMsg("Town lookup isn\u2019t available right now. You can still use \u201cUse my location\u201d.");
+      });
+  }
+
+  locInput.addEventListener("input", onLocInput);
+  locInput.addEventListener("focus", function () { loadPlaces().catch(function () {}); });
+  locInput.addEventListener("blur", function () { setTimeout(hideList, 100); });
+  locInput.addEventListener("keydown", function (e) {
+    if (!shown.length) return;
+    if (e.key === "ArrowDown") { activeIdx = (activeIdx + 1) % shown.length; renderList(); e.preventDefault(); }
+    else if (e.key === "ArrowUp") { activeIdx = (activeIdx - 1 + shown.length) % shown.length; renderList(); e.preventDefault(); }
+    else if (e.key === "Enter") { chooseCenter(shown[Math.max(activeIdx, 0)]); e.preventDefault(); }
+    else if (e.key === "Escape") { hideList(); }
+  });
+
+  locateBtn.addEventListener("click", function () {
+    if (!navigator.geolocation) { setMsg("Your browser doesn\u2019t support location lookup."); return; }
+    setMsg("Finding your location\u2026");
+    navigator.geolocation.getCurrentPosition(
+      function (pos) {
+        center = { lat: pos.coords.latitude, lon: pos.coords.longitude, label: "your location" };
+        locInput.value = "My location";
+        hideList();
+        setMsg("");
+        applyFilters();
+      },
+      function () { setMsg("Couldn\u2019t get your location. Type a town instead."); },
+      { timeout: 10000 }
+    );
+  });
+
+  // ---- distance --------------------------------------------------------------
+  function haversineMiles(lat1, lon1, lat2, lon2) {
+    var R = 3958.8, toRad = Math.PI / 180;
+    var dLat = (lat2 - lat1) * toRad, dLon = (lon2 - lon1) * toRad;
+    var a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+            Math.cos(lat1 * toRad) * Math.cos(lat2 * toRad) * Math.sin(dLon / 2) * Math.sin(dLon / 2);
+    return 2 * R * Math.asin(Math.min(1, Math.sqrt(a)));
+  }
+
+  // ---- filtering ---------------------------------------------------------------
   function applyFilters() {
     var q = searchInput.value.trim().toLowerCase();
     var state = stateSelect.value;
     var needFullHookups = fullHookupsCb.checked;
     var need50Amp = amp50Cb.checked;
     var needYearRound = yearRoundCb.checked;
+    var radiusVal = radiusSelect.value;
+    var radius = radiusVal === "any" ? Infinity : parseFloat(radiusVal);
     var visible = 0;
+    var missingCoords = 0;
 
     cards.forEach(function (card) {
       var matchesQuery =
@@ -125,22 +346,65 @@
       var matches50Amp = !need50Amp || card.dataset["50amp"] === "true";
       var matchesYearRound = !needYearRound || card.dataset.yearRound === "true";
 
+      var matchesRadius = true;
+      card._dist = null;
+      if (center) {
+        if (card._lat === null) {
+          matchesRadius = false;
+          missingCoords++;
+        } else {
+          card._dist = haversineMiles(center.lat, center.lon, card._lat, card._lon);
+          matchesRadius = card._dist <= radius;
+        }
+      }
+
       var show =
         matchesQuery &&
         matchesState &&
         matchesFullHookups &&
         matches50Amp &&
-        matchesYearRound;
+        matchesYearRound &&
+        matchesRadius;
 
       card.classList.toggle("hidden", !show);
+      var distEl = card.querySelector(".cf-dist");
+      if (distEl) {
+        if (show && card._dist !== null) {
+          distEl.textContent = Math.round(card._dist) + " mi away";
+          distEl.classList.remove("hidden");
+        } else {
+          distEl.classList.add("hidden");
+        }
+      }
       if (show) visible++;
     });
 
-    countEl.textContent = visible + " campground" + (visible === 1 ? "" : "s");
+    // Order: nearest first when a location is set, otherwise original order.
+    var ordered = cards.slice().sort(function (a, b) {
+      if (center) {
+        if (a._dist === null && b._dist === null) return a.dataset.idx - b.dataset.idx;
+        if (a._dist === null) return 1;
+        if (b._dist === null) return -1;
+        return a._dist - b._dist;
+      }
+      return a.dataset.idx - b.dataset.idx;
+    });
+    ordered.forEach(function (card) { grid.appendChild(card); });
+
+    var text = visible + " campground" + (visible === 1 ? "" : "s");
+    if (center) {
+      text += radius === Infinity
+        ? ", nearest to " + center.label
+        : " within " + radius + " miles of " + center.label;
+      if (missingCoords > 0) {
+        text += " (" + missingCoords + " without coordinates not included)";
+      }
+    }
+    countEl.textContent = text;
     emptyEl.classList.toggle("hidden", visible !== 0);
   }
 
-  [searchInput, stateSelect, fullHookupsCb, amp50Cb, yearRoundCb].forEach(function (el) {
+  [searchInput, stateSelect, fullHookupsCb, amp50Cb, yearRoundCb, radiusSelect].forEach(function (el) {
     el.addEventListener("input", applyFilters);
     el.addEventListener("change", applyFilters);
   });
