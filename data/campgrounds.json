@@ -478,5 +478,58 @@
     "open_year_round": true,
     "lat": 39.58263,
     "lon": -75.88552
+  }, 
+  {
+    "slug": "fair-harbor-rv-park",
+    "name": "Fair Harbor RV Park",
+    "state": "Georgia",
+    "location": "Perry",
+    "website": "https://fairharborrvpark.com/",
+    "google_reviews_url": "https://www.google.com/travel/search?q=fair%20harbor%20rv%20park%20%26%20campground%20google%20reviews&g2lb=4965990%2C72471280%2C72573224%2C72647020%2C72686036%2C72803964%2C72882230%2C73064764%2C121529350%2C121608706%2C121738283%2C121762713%2C121921501%2C121951222%2C122078727%2C122093071&hl=en-US&gl=us&cs=1&ssta=1&ts=CAEaRwopEicyJTB4ODhmM2RiNGFhMjJhNjliOToweGEzODI5MDI5MjhmZDE4NmESGhIUCgcI6g8QCxgCEgcI6g8QCxgDGAEyAhAA&qs=CAEyFENnc0k2ckQweDVLRnBNR2pBUkFCOAJCCQlqGP0oKZCCo0IJCWoY_SgpkIKj&ap=ugEHcmV2aWV3cw&ictx=111&ved=0CAAQ5JsGahcKEwjI9JfxoreXAxUAAAAAHQAAAAAQAw",
+    "rvlife_url": "https://campgrounds.rvlife.com/regions/georgia/perry/fair-harbor-rv-park-916",
+    "user_verified": true,
+    "full_hookups": true,
+    "amp_50_electric": true,
+    "open_year_round": true,
+    "lat": 32.4469,
+    "lon": -83.7608
+  },
+   {
+    "slug": "wolf-s-leisure-campground",
+    "name": "Wolf’s Leisure Campground",
+    "state": "Indiana",
+    "location": "Lafayette",
+    "website": "https://www.wolfscampground.com/",
+    "google_reviews_url": "https://www.google.com/travel/search?q=wolf%20leisure&g2lb=4965990%2C72471280%2C72573224%2C72647020%2C72686036%2C72803964%2C72882230%2C73064764%2C121529350%2C121608706%2C121738283%2C121762713%2C121921501%2C121951222%2C122078727%2C122093071&hl=en-US&gl=us&cs=1&ssta=1&ts=CAEaRwopEicyJTB4ODgxMzA2MTRjYTlkMGI5OToweDMyNDhmNWFjYTliN2VkYTkSGhIUCgcI6g8QCxgCEgcI6g8QCxgDGAEyAhAA&qs=CAEyE0Nnb0lxZHZmemNxMXZhUXlFQUU4AkIJCantt6ms9Ugy&ap=ugEHcmV2aWV3cw&ictx=111&ved=0CAAQ5JsGahcKEwio2pqno7eXAxUAAAAAHQAAAAAQAw",
+    "user_verified": true,
+    "full_hookups": true,
+    "amp_50_electric": true,
+    "open_year_round": true,
+    "lat": 40.52526,
+    "lon": -86.76301
+  },
+  {
+    "slug": "country-view-rv-park",
+    "name": "Country View RV Park",
+    "state": "Indiana",
+    "location": "Crawfordsville",
+    "website": "https://3lpropertiesrv.com/country-view",
+    "full_hookups": true,
+    "amp_50_electric": true,
+    "open_year_round": true,
+    "lat": 40.0827,
+    "lon": -86.8374
+  },
+  {
+    "slug": "beckoning-woods-extended-stay-rv-park",
+    "name": "Beckoning Woods Extended Stay RV Park",
+    "state": "Indiana",
+    "location": "Crawfordsville",
+    "website": "https://3lpropertiesrv.com/country-view",
+    "full_hookups": true,
+    "amp_50_electric": true,
+    "open_year_round": true,
+    "lat": 40.0321037,
+    "lon": -86.9432215
   }
 ]
