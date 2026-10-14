@@ -77,6 +77,16 @@ jobs:
           key: hugo-${{ github.run_id }}
           restore-keys:
             hugo-
+      - name: Build US town list for radius search
+        # Skipped if static/data/us-places.json is already committed. If the
+        # Census download fails the site still deploys; the finder just shows
+        # a "town lookup unavailable" message and "Use my location" still works.
+        run: |
+          if [[ -f static/data/us-places.json ]]; then
+            echo "us-places.json already present, skipping download"
+          else
+            python3 scripts/build_us_places.py || echo "::warning::Could not build us-places.json; radius search by town will be unavailable"
+          fi
       - name: Build the site
         run: |
           hugo build \
