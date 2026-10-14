@@ -1,0 +1,7 @@
+{{- /* Outbound links for one campground (a map from data/campgrounds.json). Missing URLs are skipped. */ -}}
+<ul class="tc-links">
+  {{- with .website }}<li><a href="{{ . }}" target="_blank" rel="noopener">Website</a></li>{{ end }}
+  {{- with .google_reviews_url }}<li><a href="{{ . }}" target="_blank" rel="nofollow noopener">Reviews on Google</a></li>{{ end }}
+  {{- with .rvlife_url }}<li><a href="{{ . }}" target="_blank" rel="nofollow noopener">RV Life page</a></li>{{ end }}
+  <li><a href="https://www.google.com/maps/search/?api=1&amp;query={{ printf "%s %s %s" .name .location .state }}" target="_blank" rel="nofollow noopener">Map &amp; directions</a></li>
+</ul>

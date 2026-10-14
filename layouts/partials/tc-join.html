@@ -1,0 +1,14 @@
+{{- /* Joins a slice of strings as "a", "a and b" or "a, b and c". Call with: partial "tc-join.html" (slice "a" "b") */ -}}
+{{- $items := . -}}
+{{- $n := len $items -}}
+{{- $out := "" -}}
+{{- range $i, $e := $items -}}
+  {{- if eq $i 0 -}}
+    {{- $out = $e -}}
+  {{- else if eq $i (sub $n 1) -}}
+    {{- $out = printf "%s and %s" $out $e -}}
+  {{- else -}}
+    {{- $out = printf "%s, %s" $out $e -}}
+  {{- end -}}
+{{- end -}}
+{{- return $out -}}

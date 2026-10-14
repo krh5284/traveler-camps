@@ -1,9 +1,8 @@
-# Campgrounds: new data-driven workflow
+# Campgrounds: data-driven workflow
 
-## What changed
+## How the site is structured
 
-**`data/campgrounds.json`** is now the single source of truth — a flat JSON
-array, one object per campground:
+**`data/campgrounds.json`** is the single source of truth: a flat JSON array, one object per campground.
 
 ```json
 {
@@ -17,87 +16,58 @@ array, one object per campground:
   "user_verified": true,
   "full_hookups": true,
   "amp_50_electric": true,
-  "open_year_round": true
+  "open_year_round": true,
+  "lat": 43.6,
+  "lon": -116.2
 }
 ```
 
-It was rebuilt from your 32 existing `.md` pages (kept as the source of
-truth for name/state/website/URLs/amenities, since that's your hand-checked
-content) merged with the extra fields (`location`, `user_verified`) from
-your `campgrounds.yml` / `campground2.yml` / `campgrounds3.yml` drafts. All
-32 matched up cleanly with no gaps.
+There are **no individual campground pages**. Instead:
 
-Your old `data/campgrounds.json` had two syntax errors (a trailing comma
-after Colorado's entry, a missing comma before `"Missouri"`) so it couldn't
-even parse — that's fixed as part of the rebuild. The three `.yml`
-fragments are now fully absorbed into the new JSON and can be deleted.
+| URL | What it is |
+| --- | --- |
+| `/campgrounds/` | Search page. Every campground is a card showing all of its data (name, city, state, badges, website, Google reviews, RV Life, map/directions). Each card links to its entry on the state page. |
+| `/campgrounds/<state>/` (e.g. `/campgrounds/idaho/`) | One page per state: intro, at-a-glance table, and a full entry for every campground in that state (`#<slug>` anchors). |
+| `/campgrounds/<old-slug>/` | Old individual URLs. They still exist as tiny redirects to the state page (Hugo `aliases`) so old links and Google's index don't 404. |
 
-**`scripts/generate_campgrounds.py`** generates every page in
-`content/campgrounds/` from that JSON. Run it from the project root:
+### Adding, editing or removing a campground
 
-```bash
-python3 scripts/generate_campgrounds.py
-```
+1. Edit `data/campgrounds.json` (add/change/remove an object).
+2. Run `python3 scripts/generate_campgrounds.py` from the project root.
+3. Commit. (The GitHub Actions workflow also runs the script before building, so a forgotten run can't leave the site stale.)
 
-To add a new campground going forward: append one object to
-`data/campgrounds.json`, re-run the script, done — no more hand-typing a
-`.md` file with front matter and shortcodes. The script also deletes any
-`.md` page whose slug is no longer in the JSON, so removing a campground is
-just as simple.
+The script writes `content/campgrounds/<state>.md` for every state in the JSON. The state page *content* is rendered from the JSON by `layouts/_default/state.html`, so the `.md` file is just front matter: unique title, meta description, redirect aliases and a `lastmod` that only changes when that state's data changes.
 
-**`content/campgrounds/_index.md`** no longer has a hand-maintained
-accordion listing every state and campground by hand. It now just calls:
+It also deletes the old one-page-per-campground files and any generated state page whose state no longer has campgrounds.
 
-```
-{{< campground-finder >}}
-```
+**Hand-written state copy:** anything you type *below* the closing `+++` in a state `.md` file is kept on re-runs and shown as an intro on that state's page. Adding a few unique sentences per state (best time to visit, long-stay tips, local rules you've learned) is the best long-term SEO improvement you can make.
 
-**`layouts/shortcodes/campground-finder.html`** is the new search/filter
-UI. It reads `.Site.Data.campgrounds` (Hugo auto-loads any `data/*.json`
-file) directly, so it always reflects the current JSON with no separate
-build step. It renders:
-- a text search box (matches name or city)
-- a state dropdown
-- checkboxes for Full Hookups / 50 Amp / Open Year-round
-- a card grid that filters live in the browser (plain JS, no dependencies)
+### Required fields
 
-This is in addition to — not a replacement for — Blowfish's built-in
-`enableSearch` full-text search, which still works for finding campgrounds
-by name/content sitewide.
+`slug`, `name`, `state` (full name, e.g. "Idaho"), `location` (city). Everything else is optional and skipped gracefully if missing. New states need no setup; the script knows all 50 states + DC + PR.
 
-## What to do with these files
+## SEO features
 
-1. Drop `data/campgrounds.json` into your project, replacing the old one.
-2. Delete `data/campgrounds.yml`, `data/campground2.yml`,
-   `data/campgrounds3.yml` — fully superseded.
-3. Add `scripts/generate_campgrounds.py`.
-4. Replace `content/campgrounds/_index.md` with the version here.
-5. Add `layouts/shortcodes/campground-finder.html`.
-6. Replace all 32 files in `content/campgrounds/` with the regenerated
-   versions here (byte-for-byte same rendered content, plus the new
-   structured front matter).
-7. Run `hugo server` and check `/campgrounds/` — I wasn't able to run a
-   test build in this environment (no `hugo` binary, no network), so
-   please sanity-check the filter UI and a couple of individual pages
-   before deploying.
+- Unique `<title>` and meta description on every page; canonical URLs; `robots` meta (404 is `noindex`).
+- Open Graph / Twitter cards with a default share image (`assets/img/og-default.png`, placeholder, replace with your own 1200x630 image).
+- JSON-LD structured data: `Organization` + `WebSite` (home), `CollectionPage` + `ItemList` of `Campground` (state pages), `BreadcrumbList` everywhere. See `layouts/partials/schema.html`. Coordinates are deliberately not emitted (see "Radius search").
+- Crawlable internal links: home page, search page, every state page and the site footer link to all state pages.
+- Sitemap with real `lastmod` values; empty tag/category archives are disabled.
+- Favicons + web manifest in `static/` (placeholders, replace as you like).
+- Google Analytics only loads in production builds.
 
-## Known gaps / things to double check
-
-- `location` (city) wasn't present in your `.md` files at all — it only
-  existed in the `.yml` drafts. All 32 matched by name, but if you rename a
-  campground in the JSON going forward, double check the `location` field
-  didn't get orphaned.
-- The finder shortcode's checkboxes are AND'd together (e.g. checking both
-  "Full Hookups" and "50 Amp" shows only campgrounds with both) — let me
-  know if you'd rather have OR logic for amenities.
-- If your amenity list grows beyond these three flags, the shortcode and
-  JSON schema will need a small extension (happy to do that whenever you're
-  ready).
+After deploying, submit `<your-site>/sitemap.xml` in Google Search Console and Bing Webmaster Tools. If you use a custom domain, update `baseURL` in `config/_default/hugo.toml` and `hugo.yml`, and add the verification code under `[verification]` in `config/_default/params.toml`.
 
 ## Radius search ("near a town")
 
 The campground finder can filter by distance from any US town. One-time setup, from the project root:
 
-1. `python3 scripts/build_us_places.py` — downloads the Census gazetteer and writes `static/data/us-places.json` (town lookup, loaded only when a visitor uses the location box). Committing that file is optional: the GitHub Pages workflow runs the same script during deploy whenever the file isn't in the repo. You still need to run it locally once if you want `add_coordinates.py` or a local `hugo server` preview to use the town list.
-2. `python3 scripts/add_coordinates.py --dry-run`, then without `--dry-run` — fills `lat`/`lon` in `data/campgrounds.json` from town centers. Anything it can't match is listed; add those by hand. To use exact campground pins, overwrite `lat`/`lon` with coordinates from Google Maps (the script never overwrites existing values).
+1. `python3 scripts/build_us_places.py` downloads the Census gazetteer and writes `static/data/us-places.json` (town lookup, loaded only when a visitor uses the location box). Committing that file is optional: the GitHub Pages workflow runs the same script during deploy whenever the file isn't in the repo.
+2. `python3 scripts/add_coordinates.py --dry-run`, then without `--dry-run`, fills `lat`/`lon` in `data/campgrounds.json` from town centers. Anything it can't match is listed; add those by hand. To use exact campground pins, overwrite `lat`/`lon` with coordinates from Google Maps (the script never overwrites existing values).
 3. New campgrounds: include `"lat"` and `"lon"` in the JSON object. Campgrounds without them still appear in normal searches but are left out of radius results.
+
+Because many coordinates are town centers, distances shown on cards are approximate ("About 12 mi away"), and the "Map & directions" link searches by name + city + state rather than by coordinates.
+
+## Styling note
+
+The Blowfish theme ships a pre-compiled Tailwind stylesheet, so new Tailwind utility classes in project templates won't work unless the theme CSS is rebuilt. The finder, cards and state pages therefore use their own `.tc-*` classes in `assets/css/custom.css`.

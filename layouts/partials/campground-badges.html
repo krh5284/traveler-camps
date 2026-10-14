@@ -1,0 +1,9 @@
+{{- /* Amenity badges for one campground (a map from data/campgrounds.json). */ -}}
+{{- if or .user_verified .full_hookups .amp_50_electric .open_year_round }}
+<ul class="tc-badges" aria-label="Amenities">
+  {{- if .user_verified }}<li class="tc-badge tc-badge-verified">User verified</li>{{ end }}
+  {{- if .full_hookups }}<li class="tc-badge">Full hookups</li>{{ end }}
+  {{- if .amp_50_electric }}<li class="tc-badge">50 amp electric</li>{{ end }}
+  {{- if .open_year_round }}<li class="tc-badge">Open year-round</li>{{ end }}
+</ul>
+{{- end }}
