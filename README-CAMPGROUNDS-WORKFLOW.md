@@ -93,3 +93,11 @@ by name/content sitewide.
 - If your amenity list grows beyond these three flags, the shortcode and
   JSON schema will need a small extension (happy to do that whenever you're
   ready).
+
+## Radius search ("near a town")
+
+The campground finder can filter by distance from any US town. One-time setup, from the project root:
+
+1. `python3 scripts/build_us_places.py` — downloads the Census gazetteer and writes `static/data/us-places.json` (town lookup, loaded only when a visitor uses the location box). Committing that file is optional: the GitHub Pages workflow runs the same script during deploy whenever the file isn't in the repo. You still need to run it locally once if you want `add_coordinates.py` or a local `hugo server` preview to use the town list.
+2. `python3 scripts/add_coordinates.py --dry-run`, then without `--dry-run` — fills `lat`/`lon` in `data/campgrounds.json` from town centers. Anything it can't match is listed; add those by hand. To use exact campground pins, overwrite `lat`/`lon` with coordinates from Google Maps (the script never overwrites existing values).
+3. New campgrounds: include `"lat"` and `"lon"` in the JSON object. Campgrounds without them still appear in normal searches but are left out of radius results.

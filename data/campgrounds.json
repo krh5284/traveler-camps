@@ -10,7 +10,9 @@
     "user_verified": true,
     "full_hookups": true,
     "amp_50_electric": true,
-    "open_year_round": true
+    "open_year_round": true,
+    "lat": 38.8133986,
+    "lon": -90.0998975
   },
   {
     "slug": "amana-rv-park",
@@ -23,7 +25,9 @@
     "user_verified": true,
     "full_hookups": true,
     "amp_50_electric": true,
-    "open_year_round": false
+    "open_year_round": false,
+    "lat": 41.81396,
+    "lon": -91.87819
   },
   {
     "slug": "basswood-resort",
@@ -36,7 +40,9 @@
     "user_verified": true,
     "full_hookups": true,
     "amp_50_electric": true,
-    "open_year_round": false
+    "open_year_round": false,
+    "lat": 39.381567,
+    "lon": -94.698128
   },
   {
     "slug": "ben-franklin-rv-park",
@@ -49,7 +55,9 @@
     "user_verified": true,
     "full_hookups": true,
     "amp_50_electric": true,
-    "open_year_round": true
+    "open_year_round": true,
+    "lat": 39.934159,
+    "lon": -76.800391
   },
   {
     "slug": "boise-riverside-rv-park",
@@ -62,7 +70,9 @@
     "user_verified": true,
     "full_hookups": true,
     "amp_50_electric": true,
-    "open_year_round": true
+    "open_year_round": true,
+    "lat": 43.6587,
+    "lon": -116.2779
   },
   {
     "slug": "boise-rv-travel-park",
@@ -75,7 +85,9 @@
     "user_verified": true,
     "full_hookups": true,
     "amp_50_electric": true,
-    "open_year_round": true
+    "open_year_round": true,
+    "lat": 43.5833514,
+    "lon": -116.2797756
   },
   {
     "slug": "cedar-lake-family-campground",
@@ -88,7 +100,9 @@
     "user_verified": true,
     "full_hookups": true,
     "amp_50_electric": true,
-    "open_year_round": false
+    "open_year_round": false,
+    "lat": 39.975114,
+    "lon": -76.935539
   },
   {
     "slug": "center-point-rv-park",
@@ -101,7 +115,9 @@
     "user_verified": true,
     "full_hookups": true,
     "amp_50_electric": true,
-    "open_year_round": false
+    "open_year_round": false,
+    "lat": 43.59797,
+    "lon": -116.57128
   },
   {
     "slug": "chyttles-farm-campground",
@@ -114,7 +130,9 @@
     "user_verified": true,
     "full_hookups": true,
     "amp_50_electric": true,
-    "open_year_round": true
+    "open_year_round": true,
+    "lat": 36.312443,
+    "lon": -87.903311  
   },
   {
     "slug": "cooks-lake-rv",
@@ -127,7 +145,9 @@
     "user_verified": true,
     "full_hookups": true,
     "amp_50_electric": true,
-    "open_year_round": false
+    "open_year_round": false,
+    "lat": 35.239566,
+    "lon": -90.021738
   },
   {
     "slug": "evans-rv-park",
@@ -140,7 +160,9 @@
     "user_verified": true,
     "full_hookups": true,
     "amp_50_electric": true,
-    "open_year_round": false
+    "open_year_round": false,
+    "lat": 40.375748,
+    "lon": -104.680886
   },
   {
     "slug": "four-seasons-family-campground",
@@ -153,7 +175,9 @@
     "user_verified": true,
     "full_hookups": true,
     "amp_50_electric": true,
-    "open_year_round": false
+    "open_year_round": false,
+    "lat": 39.62216249,
+    "lon": -75.24913375
   },
   {
     "slug": "hi-valley-rv-park",
@@ -166,7 +190,9 @@
     "user_verified": true,
     "full_hookups": true,
     "amp_50_electric": true,
-    "open_year_round": false
+    "open_year_round": false,
+    "lat": 43.69897,
+    "lon": -116.31603
   },
   {
     "slug": "idahome-rv-resort",
@@ -179,7 +205,9 @@
     "user_verified": true,
     "full_hookups": true,
     "amp_50_electric": true,
-    "open_year_round": false
+    "open_year_round": false,
+    "lat": 43.70736,
+    "lon": -116.649
   },
   {
     "slug": "independence-rv-park",
@@ -192,7 +220,9 @@
     "user_verified": true,
     "full_hookups": true,
     "amp_50_electric": true,
-    "open_year_round": false
+    "open_year_round": false,
+    "lat": 42.4611604,
+    "lon": -91.8906673
   },
   {
     "slug": "kamp-indy",
@@ -205,7 +235,9 @@
     "user_verified": true,
     "full_hookups": true,
     "amp_50_electric": true,
-    "open_year_round": true
+    "open_year_round": true,
+    "lat": 39.67634,
+    "lon": -86.19141
   },
   {
     "slug": "lake-point-campground-rv-resort",
@@ -218,7 +250,9 @@
     "user_verified": true,
     "full_hookups": true,
     "amp_50_electric": true,
-    "open_year_round": false
+    "open_year_round": false,
+    "lat": 43.6855149,
+    "lon": -116.68650608
   },
   {
     "slug": "lazy-river",
@@ -231,7 +265,9 @@
     "user_verified": true,
     "full_hookups": true,
     "amp_50_electric": true,
-    "open_year_round": true
+    "open_year_round": true,
+    "lat": 40.12088,
+    "lon": -82.49223
   },
   {
     "slug": "mountain-home-rv-park",
@@ -244,7 +280,9 @@
     "user_verified": true,
     "full_hookups": true,
     "amp_50_electric": true,
-    "open_year_round": false
+    "open_year_round": false,
+    "lat": 43.133724,
+    "lon": -115.671763
   },
   {
     "slug": "mountain-view-rv-park",
@@ -257,7 +295,9 @@
     "user_verified": true,
     "full_hookups": true,
     "amp_50_electric": true,
-    "open_year_round": true
+    "open_year_round": true,
+    "lat": 43.5677219,
+    "lon": -116.2043654
   },
   {
     "slug": "niagara-shores-campground",
@@ -270,7 +310,9 @@
     "user_verified": true,
     "full_hookups": true,
     "amp_50_electric": true,
-    "open_year_round": false
+    "open_year_round": false,
+    "lat": 43.342909,
+    "lon": -78.680467
   },
   {
     "slug": "northgate-park",
@@ -283,7 +325,9 @@
     "user_verified": true,
     "full_hookups": true,
     "amp_50_electric": true,
-    "open_year_round": false
+    "open_year_round": false,
+    "lat": 28.691017,
+    "lon": -80.859088
   },
   {
     "slug": "quarry-lake-campground",
@@ -296,7 +340,9 @@
     "user_verified": true,
     "full_hookups": true,
     "amp_50_electric": true,
-    "open_year_round": false
+    "open_year_round": false,
+    "lat": 39.649183,
+    "lon": -86.703152
   },
   {
     "slug": "rippling-stream-campground",
@@ -309,7 +355,9 @@
     "user_verified": true,
     "full_hookups": false,
     "amp_50_electric": false,
-    "open_year_round": true
+    "open_year_round": true,
+    "lat": 39.8592,
+    "lon": -82.6556
   },
   {
     "slug": "s-h-campground",
@@ -322,7 +370,9 @@
     "user_verified": true,
     "full_hookups": true,
     "amp_50_electric": true,
-    "open_year_round": true
+    "open_year_round": true,
+    "lat": 39.7983,
+    "lon": -85.8494
   },
   {
     "slug": "shamrock-hills-rv-park",
@@ -335,7 +385,9 @@
     "user_verified": true,
     "full_hookups": true,
     "amp_50_electric": false,
-    "open_year_round": true
+    "open_year_round": true,
+    "lat": 41.585731,
+    "lon": -86.261133
   },
   {
     "slug": "sun-creek-point-rv-park",
@@ -348,7 +400,9 @@
     "user_verified": true,
     "full_hookups": true,
     "amp_50_electric": true,
-    "open_year_round": false
+    "open_year_round": false,
+    "lat": 43.67176,
+    "lon": -116.65533
   },
   {
     "slug": "trails-end-rv-campground",
@@ -361,7 +415,9 @@
     "user_verified": true,
     "full_hookups": true,
     "amp_50_electric": true,
-    "open_year_round": true
+    "open_year_round": true,
+    "lat": 38.7614190,
+    "lon": -90.121568
   },
   {
     "slug": "tree-haven-campground",
@@ -374,7 +430,9 @@
     "user_verified": true,
     "full_hookups": false,
     "amp_50_electric": true,
-    "open_year_round": false
+    "open_year_round": false,
+    "lat": 40.1584,
+    "lon": -82.8262
   },
   {
     "slug": "wells-creek-rv-park",
@@ -387,7 +445,9 @@
     "user_verified": true,
     "full_hookups": true,
     "amp_50_electric": true,
-    "open_year_round": true
+    "open_year_round": true,
+    "lat": 36.3116,
+    "lon": -87.6773
   },
   {
     "slug": "whispering-river-ranch-rv-park",
@@ -400,7 +460,9 @@
     "user_verified": true,
     "full_hookups": true,
     "amp_50_electric": true,
-    "open_year_round": false
+    "open_year_round": false,
+    "lat": 38.99065,
+    "lon": -119.1820
   },
   {
     "slug": "woodlands-camping-resort",
@@ -413,9 +475,11 @@
     "user_verified": true,
     "full_hookups": true,
     "amp_50_electric": true,
-    "open_year_round": true
-  },
-   {
+    "open_year_round": true,
+    "lat": 39.58263,
+    "lon": -75.88552
+  }, 
+  {
     "slug": "fair-harbor-rv-park",
     "name": "Fair Harbor RV Park",
     "state": "Georgia",
@@ -426,7 +490,9 @@
     "user_verified": true,
     "full_hookups": true,
     "amp_50_electric": true,
-    "open_year_round": true
+    "open_year_round": true,
+    "lat": 32.4469,
+    "lon": -83.7608
   },
    {
     "slug": "wolf-s-leisure-campground",
@@ -438,7 +504,9 @@
     "user_verified": true,
     "full_hookups": true,
     "amp_50_electric": true,
-    "open_year_round": true
+    "open_year_round": true,
+    "lat": 40.52526,
+    "lon": -86.76301
   },
   {
     "slug": "country-view-rv-park",
@@ -448,7 +516,9 @@
     "website": "https://3lpropertiesrv.com/country-view",
     "full_hookups": true,
     "amp_50_electric": true,
-    "open_year_round": true
+    "open_year_round": true,
+    "lat": 40.0827,
+    "lon": -86.8374
   },
   {
     "slug": "beckoning-woods-extended-stay-rv-park",
@@ -458,6 +528,8 @@
     "website": "https://3lpropertiesrv.com/country-view",
     "full_hookups": true,
     "amp_50_electric": true,
-    "open_year_round": true
+    "open_year_round": true,
+    "lat": 40.0321037,
+    "lon": -86.9432215
   }
 ]
