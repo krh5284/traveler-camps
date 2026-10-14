@@ -1,93 +1,57 @@
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QW20S00NMD"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-QW20S00NMD');
-</script>
-
   <meta charset="utf-8">
-  {{ with .Site.Language.Params.htmlCode | default .Site.LanguageCode }}
-    <meta http-equiv="content-language" content="{{ . }}">
-  {{ end }}
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="theme-color">
 
-  {{/* Title */}}
-  {{ if .IsHome }}
-    <title>{{ .Site.Title | emojify }}</title>
-    <meta name="title" content="{{ .Site.Title | emojify }}">
+  {{/* ---- Title + description ------------------------------------------------------------------------ */}}
+  {{- $siteTitle := .Site.Title -}}
+  {{- $title := $siteTitle -}}
+  {{- if .Params.seo_title -}}
+    {{- $title = .Params.seo_title -}}
+  {{- else if .Title -}}
+    {{- if in .Title $siteTitle -}}
+      {{- $title = .Title -}}
+    {{- else -}}
+      {{- $title = printf "%s | %s" .Title $siteTitle -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $description := .Params.description | default .Site.Params.description -}}
+  <title>{{ $title }}</title>
+  {{ with $description }}<meta name="description" content="{{ . }}">{{ end }}
+
+  {{/* ---- Indexing ------------------------------------------------------------------------------------- */}}
+  {{ if eq .Kind "404" }}
+    <meta name="robots" content="noindex, follow">
+  {{ else if .Params.robots }}
+    <meta name="robots" content="{{ .Params.robots }}">
   {{ else }}
-    <title>{{ .Title | emojify }} &middot; {{ .Site.Title | emojify }}</title>
-    <meta name="title" content="{{ .Title | emojify }} &middot; {{ .Site.Title | emojify }}">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   {{ end }}
-
-  {{/* Metadata */}}
-  {{ with (.Params.Summary | default .Params.Description) | default .Site.Params.description }}
-    <meta name="description" content="{{ . }}">
-  {{ end }}
-  {{ with  .Params.Tags | default .Site.Params.keywords }}
-    <meta name="keywords" content="{{ range . }}{{ . }},{{ end }}">
-  {{ end }}
-  {{ with .Site.Params.robots }}
-    <meta name="robots" content="{{ . }}">
-  {{ end }}
-  {{ with .Params.robots }}
-    <meta name="robots" content="{{ . }}">
-  {{ end }}
-  <link rel="canonical" href="{{ .Permalink }}">
+  {{ if ne .Kind "404" }}<link rel="canonical" href="{{ .Permalink }}">{{ end }}
   {{ range .AlternativeOutputFormats }}
-    {{ printf `
-      <link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .RelPermalink ($.Site.Title | emojify) |
-      safeHTML
-    }}
+    {{ if eq (lower .Name) "rss" }}<link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .RelPermalink }}" title="{{ $siteTitle }}">{{ end }}
+  {{ end }}
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#14191f">
+
+  {{/* ---- Open Graph / Twitter ---------------------------------------------------------------------------- */}}
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ $siteTitle }}">
+  <meta property="og:title" content="{{ $title }}">
+  {{ with $description }}<meta property="og:description" content="{{ . }}">{{ end }}
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ $title }}">
+  {{ with $description }}<meta name="twitter:description" content="{{ . }}">{{ end }}
+  {{ with resources.Get "img/og-default.png" }}
+    <meta property="og:image" content="{{ .Permalink }}">
+    <meta property="og:image:width" content="{{ .Width }}">
+    <meta property="og:image:height" content="{{ .Height }}">
+    <meta property="og:image:alt" content="{{ $siteTitle }}: long-term and extended-stay campgrounds for traveling workers">
+    <meta name="twitter:image" content="{{ .Permalink }}">
   {{ end }}
 
-  {{/* Me */}}
-  {{ with .Site.Params.Author.name }}
-    <meta name="author" content="{{ . }}">
-  {{ end }}
-  {{ with .Site.Params.Author.links }}
-    {{ range $links := . }}
-      {{ range $name, $url := $links }}
-        {{ if not (strings.HasPrefix $url "mailto:") }}
-          <link href="{{ $url }}" rel="me">
-        {{ end }}
-      {{ end }}
-    {{ end }}
-  {{ end }}
-
-  {{/* Social */}}
-  {{ template "_internal/opengraph.html" . }}
-  {{ template "_internal/twitter_cards.html" . }}
-  {{/* Use defaultSocialImage if feature image does not exist */}}
-  {{ $featureImage := "" }}
-  {{ $pageImages := .Resources.ByType "image" }}
-  {{ range slice "*featured*" "*cover*" "*thumbnail*" }}
-    {{ if not $featureImage }}
-      {{ $featureImage = $pageImages.GetMatch . }}
-    {{ end }}
-  {{ end }}
-  {{ if not $featureImage }}
-    {{ with .Site.Params.defaultSocialImage }}
-      {{ $socialImage := "" }}
-      {{ if or (strings.HasPrefix . "http:") (strings.HasPrefix . "https:") }}
-        {{ $socialImage = resources.GetRemote . }}
-      {{ else }}
-        {{ $socialImage = resources.Get . }}
-      {{ end }}
-      {{ with $socialImage }}
-        <meta name="twitter:image" content="{{ .RelPermalink | absURL }}">
-        <meta property="og:image" content="{{ .RelPermalink | absURL }}">
-      {{ end }}
-    {{ end }}
-  {{ end }}
-
-  {{/* Site Verification */}}
+  {{/* ---- Site verification ---------------------------------------------------------------------------------- */}}
   {{ with .Site.Params.verification.google }}
     <meta name="google-site-verification" content="{{ . }}">
   {{ end }}
@@ -100,13 +64,32 @@
   {{ with .Site.Params.verification.yandex }}
     <meta name="yandex-verification" content="{{ . }}">
   {{ end }}
-  {{ with .Site.Params.verification.fediverse }}
-    <meta name="fediverse:creator" content="{{ . }}">
+
+  {{/* ---- Icons ----------------------------------------------------------------------------------------------- */}}
+  {{ if templates.Exists "partials/favicons.html" }}
+    {{ partialCached "favicons.html" .Site }}
+  {{ else }}
+    <link rel="icon" href="{{ "favicon.ico" | relURL }}" sizes="48x48">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ "favicon-32x32.png" | relURL }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ "favicon-16x16.png" | relURL }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ "apple-touch-icon.png" | relURL }}">
+    <link rel="manifest" href="{{ "site.webmanifest" | relURL }}">
+  {{ end }}
+
+  {{/* ---- Google Analytics (production builds only) -------------------------------------------------------------- */}}
+  {{ if hugo.IsProduction }}
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QW20S00NMD"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QW20S00NMD');
+    </script>
   {{ end }}
 
   {{ $alg := .Site.Params.fingerprintAlgorithm | default "sha512" }}
 
-  {{/* CSS */}}
+  {{/* ---- CSS ------------------------------------------------------------------------------------------------------- */}}
   {{ $cssResources := slice }}
   {{ $schemeName := .Site.Params.colorScheme | default "blowfish" }}
   {{ $cssScheme := resources.Get (printf "css/schemes/%s.css" (lower $schemeName)) | default (resources.Get "css/schemes/blowfish.css") }}
@@ -125,7 +108,7 @@
     href="{{ $bundleCSS.RelPermalink }}"
     integrity="{{ $bundleCSS.Data.Integrity }}">
 
-  {{/* JS loaded immediately */}}
+  {{/* ---- JS loaded immediately ---------------------------------------------------------------------------------------- */}}
   {{ $jsAppearance := resources.Get "js/appearance.js" | resources.ExecuteAsTemplate "js/appearance.js" . | resources.Minify | resources.Fingerprint $alg }}
   <script
     type="text/javascript"
@@ -150,7 +133,7 @@
     <script src="{{ $zoomJS.RelPermalink }}" integrity="{{ $zoomJS.Data.Integrity }}"></script>
   {{ end }}
 
-  {{/* JS deferred */}}
+  {{/* ---- JS deferred ------------------------------------------------------------------------------------------------------ */}}
   {{ $jsResources := slice }}
   {{ if site.Params.footer.showScrollToTop | default true }}
     {{ $jsResources = $jsResources | append (resources.Get "js/scroll-to-top.js") }}
@@ -179,44 +162,22 @@
       data-copied="{{ i18n "code.copied" }}"></script>
   {{ end }}
 
-  {{/* Conditional loaded resources */}}
+  {{/* ---- Conditional loaded resources ----------------------------------------------------------------------------------------- */}}
   {{ partial "vendor.html" . }}
 
-  {{/* Icons */}}
-  {{ if templates.Exists "partials/favicons.html" }}
-    {{ partialCached "favicons.html" .Site }}
-  {{ else }}
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ "apple-touch-icon.png" | relURL }}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ "favicon-32x32.png" | relURL }}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ "favicon-16x16.png" | relURL }}">
-    <link rel="manifest" href="{{ "site.webmanifest" | relURL }}">
-  {{ end }}
-
-  {{/* Schema */}}
+  {{/* ---- Structured data (JSON-LD) -------------------------------------------------------------------------------------------- */}}
   {{ partial "schema.html" . }}
 
-  {{/* Analytics */}}
+  {{/* ---- Analytics ---------------------------------------------------------------------------------------------------------------- */}}
   {{ if hugo.IsProduction }}
     {{ partial "analytics/main.html" . }}
   {{ end }}
 
-  {{/* Extend head - eg. for custom analytics scripts, etc. */}}
+  {{/* ---- Extend head ------------------------------------------------------------------------------------------------------------------ */}}
   {{ if templates.Exists "partials/extend-head.html" }}
     {{ partialCached "extend-head.html" .Site }}
   {{ end }}
-
-  {{/* Uncached extend head - Example: https://gohugo.io/methods/page/hasshortcode/ */}}
   {{ if templates.Exists "partials/extend-head-uncached.html" }}
     {{ partial "extend-head-uncached.html" . }}
   {{ end }}
-
-  {{/* Advertisement */}}
-  {{ with .Site.Params.advertisement.adsense }}
-    <meta name="google-adsense-account" content="{{ . }}">
-    <script
-      async
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ . }}"
-      crossorigin="anonymous"></script>
-  {{ end }}
-
 </head>

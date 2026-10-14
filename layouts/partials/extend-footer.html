@@ -1,0 +1,11 @@
+{{- /* Site-wide internal links to every state page (rendered once, reused on every page). */ -}}
+{{- with site.GetPage "/campgrounds" }}
+<nav class="tc-footer-states" aria-label="Campgrounds by state">
+  <p>Campgrounds by state</p>
+  <ul>
+    {{- range .RegularPages.ByParam "state" }}
+    <li><a href="{{ .RelPermalink }}">{{ .Params.state }}</a></li>
+    {{- end }}
+  </ul>
+</nav>
+{{- end }}

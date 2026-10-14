@@ -1,0 +1,78 @@
+{{- /*
+  Structured data (JSON-LD), built as Hugo maps and serialised with jsonify so quoting/escaping is always valid.
+    - Home:           Organization + WebSite
+    - State pages:    CollectionPage + ItemList of Campground + BreadcrumbList
+    - /campgrounds/:  CollectionPage + ItemList of state pages + BreadcrumbList
+    - Everything else: WebPage + BreadcrumbList
+  Campground coordinates are intentionally NOT emitted: many are town-centre approximations used only for radius search.
+*/ -}}
+{{- if ne .Kind "404" -}}
+  {{- $siteURL := site.Home.Permalink -}}
+  {{- $orgID := printf "%s#organization" $siteURL -}}
+  {{- $siteID := printf "%s#website" $siteURL -}}
+  {{- $graph := slice -}}
+
+  {{- if .IsHome -}}
+    {{- $org := dict "@type" "Organization" "@id" $orgID "name" site.Title "url" $siteURL "logo" ("android-chrome-512x512.png" | absURL) -}}
+    {{- $web := dict "@type" "WebSite" "@id" $siteID "url" $siteURL "name" site.Title "inLanguage" "en-US" "publisher" (dict "@id" $orgID) -}}
+    {{- with site.Params.description -}}{{- $web = merge $web (dict "description" .) -}}{{- end -}}
+    {{- $graph = $graph | append $org $web -}}
+  {{- else -}}
+    {{- $isState := false -}}
+    {{- if .Params.state -}}{{- $isState = true -}}{{- end -}}
+    {{- $pageType := "WebPage" -}}
+    {{- if or $isState (and (eq .Kind "section") (eq .Section "campgrounds")) -}}{{- $pageType = "CollectionPage" -}}{{- end -}}
+
+    {{- /* Breadcrumbs */ -}}
+    {{- $crumbs := slice (dict "name" "Home" "url" $siteURL) -}}
+    {{- if $isState -}}
+      {{- with site.GetPage "/campgrounds" -}}{{- $crumbs = $crumbs | append (dict "name" "Campgrounds" "url" .Permalink) -}}{{- end -}}
+    {{- end -}}
+    {{- $crumbName := .Title -}}
+    {{- if $isState -}}{{- $crumbName = .Params.state -}}{{- end -}}
+    {{- $crumbs = $crumbs | append (dict "name" $crumbName "url" .Permalink) -}}
+    {{- $crumbItems := slice -}}
+    {{- range $i, $c := $crumbs -}}
+      {{- $crumbItems = $crumbItems | append (dict "@type" "ListItem" "position" (add $i 1) "name" $c.name "item" $c.url) -}}
+    {{- end -}}
+    {{- $crumbID := printf "%s#breadcrumb" .Permalink -}}
+    {{- $crumbList := dict "@type" "BreadcrumbList" "@id" $crumbID "itemListElement" $crumbItems -}}
+
+    {{- /* The page itself */ -}}
+    {{- $page := dict "@type" $pageType "@id" (printf "%s#webpage" .Permalink) "url" .Permalink "name" (.Params.seo_title | default .Title) "inLanguage" "en-US" "isPartOf" (dict "@id" $siteID) "breadcrumb" (dict "@id" $crumbID) -}}
+    {{- with .Params.description -}}{{- $page = merge $page (dict "description" .) -}}{{- end -}}
+    {{- if not .Lastmod.IsZero -}}{{- $page = merge $page (dict "dateModified" (.Lastmod.Format "2006-01-02")) -}}{{- end -}}
+
+    {{- if $isState -}}
+      {{- $permalink := .Permalink -}}
+      {{- $abbr := .Params.state_abbr -}}
+      {{- $items := sort (sort (where site.Data.campgrounds "state" .Params.state) "name") "location" -}}
+      {{- $elements := slice -}}
+      {{- range $i, $c := $items -}}
+        {{- $anchor := printf "%s#%s" $permalink $c.slug -}}
+        {{- $node := dict "@type" "Campground" "@id" $anchor "name" $c.name "url" ($c.website | default $anchor) "address" (dict "@type" "PostalAddress" "addressLocality" $c.location "addressRegion" $abbr "addressCountry" "US") -}}
+        {{- $features := slice -}}
+        {{- if $c.full_hookups -}}{{- $features = $features | append (dict "@type" "LocationFeatureSpecification" "name" "Full hookups" "value" true) -}}{{- end -}}
+        {{- if $c.amp_50_electric -}}{{- $features = $features | append (dict "@type" "LocationFeatureSpecification" "name" "50 amp electric" "value" true) -}}{{- end -}}
+        {{- if $c.open_year_round -}}{{- $features = $features | append (dict "@type" "LocationFeatureSpecification" "name" "Open year-round" "value" true) -}}{{- end -}}
+        {{- if $features -}}{{- $node = merge $node (dict "amenityFeature" $features) -}}{{- end -}}
+        {{- with $c.rvlife_url -}}{{- $node = merge $node (dict "sameAs" (slice .)) -}}{{- end -}}
+        {{- $elements = $elements | append (dict "@type" "ListItem" "position" (add $i 1) "item" $node) -}}
+      {{- end -}}
+      {{- $list := dict "@type" "ItemList" "@id" (printf "%s#list" $permalink) "name" (printf "Campgrounds in %s" .Params.state) "numberOfItems" (len $items) "itemListElement" $elements -}}
+      {{- $page = merge $page (dict "mainEntity" (dict "@id" (printf "%s#list" $permalink))) -}}
+      {{- $graph = $graph | append $page $crumbList $list -}}
+    {{- else if and (eq .Kind "section") (eq .Section "campgrounds") -}}
+      {{- $stateItems := slice -}}
+      {{- range $i, $p := .RegularPages.ByParam "state" -}}
+        {{- $stateItems = $stateItems | append (dict "@type" "ListItem" "position" (add $i 1) "name" $p.Title "url" $p.Permalink) -}}
+      {{- end -}}
+      {{- $list := dict "@type" "ItemList" "@id" (printf "%s#list" .Permalink) "name" "Campgrounds by state" "itemListElement" $stateItems -}}
+      {{- $page = merge $page (dict "mainEntity" (dict "@id" (printf "%s#list" .Permalink))) -}}
+      {{- $graph = $graph | append $page $crumbList $list -}}
+    {{- else -}}
+      {{- $graph = $graph | append $page $crumbList -}}
+    {{- end -}}
+  {{- end -}}
+  <script type="application/ld+json">{{ dict "@context" "https://schema.org" "@graph" $graph | jsonify | safeJS }}</script>
+{{- end -}}

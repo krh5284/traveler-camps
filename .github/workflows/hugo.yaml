@@ -87,6 +87,9 @@ jobs:
           else
             python3 scripts/build_us_places.py || echo "::warning::Could not build us-places.json; radius search by town will be unavailable"
           fi
+      - name: Generate state pages from data/campgrounds.json
+        # Keeps content/campgrounds/<state>.md in sync with the JSON even if the script wasn't run locally.
+        run: python3 scripts/generate_campgrounds.py
       - name: Build the site
         run: |
           hugo build \
