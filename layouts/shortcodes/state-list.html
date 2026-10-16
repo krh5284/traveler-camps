@@ -1,0 +1,10 @@
+{{- /* Crawlable list of links to every state page (shortcode name: state-list). */ -}}
+{{- with site.GetPage "/campgrounds" }}
+<div class="tc-wrap not-prose">
+  <ul class="tc-chips">
+    {{- range .RegularPages.ByParam "state" }}
+    <li><a href="{{ .RelPermalink }}">{{ .Params.state }} <span>({{ .Params.campground_count }})</span></a></li>
+    {{- end }}
+  </ul>
+</div>
+{{- end }}

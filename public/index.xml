@@ -1,390 +1,210 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Traveler Camps</title>
-    <link>http://localhost:1313/krh5284/traveler-camps/</link>
-    <description>Recent content on Traveler Camps</description>
+    <title>Long-Term &amp; Monthly Campgrounds for Traveling Workers on Traveler Camps</title>
+    <link>http://localhost:1313/traveler-camps/</link>
+    <description>Recent content in Long-Term &amp; Monthly Campgrounds for Traveling Workers on Traveler Camps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2026 </copyright>
-    <atom:link href="http://localhost:1313/krh5284/traveler-camps/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 15 Oct 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/traveler-camps/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title></title>
-      <link>http://localhost:1313/krh5284/traveler-camps/contact-us/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Alabama Extended-Stay Campgrounds &amp; RV Parks</title>
+      <link>http://localhost:1313/traveler-camps/campgrounds/alabama/</link>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/krh5284/traveler-camps/contact-us/</guid>
+      <guid>http://localhost:1313/traveler-camps/campgrounds/alabama/</guid>
       <description></description>
       
     </item>
     
     <item>
-      <title></title>
-      <link>http://localhost:1313/krh5284/traveler-camps/new-campground/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>California Extended-Stay Campgrounds &amp; RV Parks</title>
+      <link>http://localhost:1313/traveler-camps/campgrounds/california/</link>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/krh5284/traveler-camps/new-campground/</guid>
+      <guid>http://localhost:1313/traveler-camps/campgrounds/california/</guid>
       <description></description>
       
     </item>
     
     <item>
-      <title>Colorado - Evans RV Park</title>
-      <link>http://localhost:1313/krh5284/traveler-camps/campgrounds/evans-rv-park/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Indiana Extended-Stay Campgrounds &amp; RV Parks</title>
+      <link>http://localhost:1313/traveler-camps/campgrounds/indiana/</link>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/krh5284/traveler-camps/campgrounds/evans-rv-park/</guid>
+      <guid>http://localhost:1313/traveler-camps/campgrounds/indiana/</guid>
       <description></description>
       
     </item>
     
     <item>
-      <title>Florida - Northgate Mobile Home &amp; RV Park</title>
-      <link>http://localhost:1313/krh5284/traveler-camps/campgrounds/northgate-park/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>West Virginia Extended-Stay Campgrounds &amp; RV Parks</title>
+      <link>http://localhost:1313/traveler-camps/campgrounds/west-virginia/</link>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/krh5284/traveler-camps/campgrounds/northgate-park/</guid>
+      <guid>http://localhost:1313/traveler-camps/campgrounds/west-virginia/</guid>
       <description></description>
       
     </item>
     
     <item>
-      <title>Georgia - Fair Harbor RV Park</title>
-      <link>http://localhost:1313/krh5284/traveler-camps/campgrounds/fair-harbor-rv-park/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Colorado Extended-Stay Campgrounds &amp; RV Parks</title>
+      <link>http://localhost:1313/traveler-camps/campgrounds/colorado/</link>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/krh5284/traveler-camps/campgrounds/fair-harbor-rv-park/</guid>
+      <guid>http://localhost:1313/traveler-camps/campgrounds/colorado/</guid>
       <description></description>
       
     </item>
     
     <item>
-      <title>Idaho - Boise Riverside RV Park</title>
-      <link>http://localhost:1313/krh5284/traveler-camps/campgrounds/boise-riverside-rv-park/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Florida Extended-Stay Campgrounds &amp; RV Parks</title>
+      <link>http://localhost:1313/traveler-camps/campgrounds/florida/</link>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/krh5284/traveler-camps/campgrounds/boise-riverside-rv-park/</guid>
+      <guid>http://localhost:1313/traveler-camps/campgrounds/florida/</guid>
       <description></description>
       
     </item>
     
     <item>
-      <title>Idaho - Boise RV Travel Park</title>
-      <link>http://localhost:1313/krh5284/traveler-camps/campgrounds/boise-rv-travel-park/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Georgia Extended-Stay Campgrounds &amp; RV Parks</title>
+      <link>http://localhost:1313/traveler-camps/campgrounds/georgia/</link>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/krh5284/traveler-camps/campgrounds/boise-rv-travel-park/</guid>
+      <guid>http://localhost:1313/traveler-camps/campgrounds/georgia/</guid>
       <description></description>
       
     </item>
     
     <item>
-      <title>Idaho - Center Point RV Park</title>
-      <link>http://localhost:1313/krh5284/traveler-camps/campgrounds/center-point-rv-park/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Idaho Extended-Stay Campgrounds &amp; RV Parks</title>
+      <link>http://localhost:1313/traveler-camps/campgrounds/idaho/</link>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/krh5284/traveler-camps/campgrounds/center-point-rv-park/</guid>
+      <guid>http://localhost:1313/traveler-camps/campgrounds/idaho/</guid>
       <description></description>
       
     </item>
     
     <item>
-      <title>Idaho - Hi Valley RV Park</title>
-      <link>http://localhost:1313/krh5284/traveler-camps/campgrounds/hi-valley-rv-park/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Illinois Extended-Stay Campgrounds &amp; RV Parks</title>
+      <link>http://localhost:1313/traveler-camps/campgrounds/illinois/</link>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/krh5284/traveler-camps/campgrounds/hi-valley-rv-park/</guid>
+      <guid>http://localhost:1313/traveler-camps/campgrounds/illinois/</guid>
       <description></description>
       
     </item>
     
     <item>
-      <title>Idaho - Idahome RV Resort</title>
-      <link>http://localhost:1313/krh5284/traveler-camps/campgrounds/idahome-rv-resort/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Iowa Extended-Stay Campgrounds &amp; RV Parks</title>
+      <link>http://localhost:1313/traveler-camps/campgrounds/iowa/</link>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/krh5284/traveler-camps/campgrounds/idahome-rv-resort/</guid>
+      <guid>http://localhost:1313/traveler-camps/campgrounds/iowa/</guid>
       <description></description>
       
     </item>
     
     <item>
-      <title>Idaho - Lake Point Campground &amp; RV Resort</title>
-      <link>http://localhost:1313/krh5284/traveler-camps/campgrounds/lake-point-campground-rv-resort/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Maryland Extended-Stay Campgrounds &amp; RV Parks</title>
+      <link>http://localhost:1313/traveler-camps/campgrounds/maryland/</link>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/krh5284/traveler-camps/campgrounds/lake-point-campground-rv-resort/</guid>
+      <guid>http://localhost:1313/traveler-camps/campgrounds/maryland/</guid>
       <description></description>
       
     </item>
     
     <item>
-      <title>Idaho - Mountain Home RV Park</title>
-      <link>http://localhost:1313/krh5284/traveler-camps/campgrounds/mountain-home-rv-park/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Missouri Extended-Stay Campgrounds &amp; RV Parks</title>
+      <link>http://localhost:1313/traveler-camps/campgrounds/missouri/</link>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/krh5284/traveler-camps/campgrounds/mountain-home-rv-park/</guid>
+      <guid>http://localhost:1313/traveler-camps/campgrounds/missouri/</guid>
       <description></description>
       
     </item>
     
     <item>
-      <title>Idaho - Mountain View RV Park</title>
-      <link>http://localhost:1313/krh5284/traveler-camps/campgrounds/mountain-view-rv-park/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Nevada Extended-Stay Campgrounds &amp; RV Parks</title>
+      <link>http://localhost:1313/traveler-camps/campgrounds/nevada/</link>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/krh5284/traveler-camps/campgrounds/mountain-view-rv-park/</guid>
+      <guid>http://localhost:1313/traveler-camps/campgrounds/nevada/</guid>
       <description></description>
       
     </item>
     
     <item>
-      <title>Idaho - Sun Creek Point RV Park</title>
-      <link>http://localhost:1313/krh5284/traveler-camps/campgrounds/sun-creek-point-rv-park/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>New Jersey Extended-Stay Campgrounds &amp; RV Parks</title>
+      <link>http://localhost:1313/traveler-camps/campgrounds/new-jersey/</link>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/krh5284/traveler-camps/campgrounds/sun-creek-point-rv-park/</guid>
+      <guid>http://localhost:1313/traveler-camps/campgrounds/new-jersey/</guid>
       <description></description>
       
     </item>
     
     <item>
-      <title>Illinois - 5 Diamond Campground</title>
-      <link>http://localhost:1313/krh5284/traveler-camps/campgrounds/5-diamond-campground/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>New York Extended-Stay Campgrounds &amp; RV Parks</title>
+      <link>http://localhost:1313/traveler-camps/campgrounds/new-york/</link>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/krh5284/traveler-camps/campgrounds/5-diamond-campground/</guid>
+      <guid>http://localhost:1313/traveler-camps/campgrounds/new-york/</guid>
       <description></description>
       
     </item>
     
     <item>
-      <title>Illinois - Trails End RV Campground</title>
-      <link>http://localhost:1313/krh5284/traveler-camps/campgrounds/trails-end-rv-campground/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Ohio Extended-Stay Campgrounds &amp; RV Parks</title>
+      <link>http://localhost:1313/traveler-camps/campgrounds/ohio/</link>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/krh5284/traveler-camps/campgrounds/trails-end-rv-campground/</guid>
+      <guid>http://localhost:1313/traveler-camps/campgrounds/ohio/</guid>
       <description></description>
       
     </item>
     
     <item>
-      <title>Indiana - Beckoning Woods Extended Stay RV Park</title>
-      <link>http://localhost:1313/krh5284/traveler-camps/campgrounds/beckoning-woods-extended-stay-rv-park/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Pennsylvania Extended-Stay Campgrounds &amp; RV Parks</title>
+      <link>http://localhost:1313/traveler-camps/campgrounds/pennsylvania/</link>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/krh5284/traveler-camps/campgrounds/beckoning-woods-extended-stay-rv-park/</guid>
+      <guid>http://localhost:1313/traveler-camps/campgrounds/pennsylvania/</guid>
       <description></description>
       
     </item>
     
     <item>
-      <title>Indiana - Country View RV Park</title>
-      <link>http://localhost:1313/krh5284/traveler-camps/campgrounds/country-view-rv-park/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Tennessee Extended-Stay Campgrounds &amp; RV Parks</title>
+      <link>http://localhost:1313/traveler-camps/campgrounds/tennessee/</link>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/krh5284/traveler-camps/campgrounds/country-view-rv-park/</guid>
+      <guid>http://localhost:1313/traveler-camps/campgrounds/tennessee/</guid>
       <description></description>
       
     </item>
     
     <item>
-      <title>Indiana - Kamp Indy (Lake Haven Retreat)</title>
-      <link>http://localhost:1313/krh5284/traveler-camps/campgrounds/kamp-indy/</link>
+      <title>Add a Campground to Traveler Camps</title>
+      <link>http://localhost:1313/traveler-camps/new-campground/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/krh5284/traveler-camps/campgrounds/kamp-indy/</guid>
+      <guid>http://localhost:1313/traveler-camps/new-campground/</guid>
       <description></description>
       
     </item>
     
     <item>
-      <title>Indiana - Quarry Lake Campground</title>
-      <link>http://localhost:1313/krh5284/traveler-camps/campgrounds/quarry-lake-campground/</link>
+      <title>Contact Traveler Camps</title>
+      <link>http://localhost:1313/traveler-camps/contact-us/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/krh5284/traveler-camps/campgrounds/quarry-lake-campground/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Indiana - S&amp;H Campground</title>
-      <link>http://localhost:1313/krh5284/traveler-camps/campgrounds/s-h-campground/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/krh5284/traveler-camps/campgrounds/s-h-campground/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Indiana - Shamrock Hills RV Park</title>
-      <link>http://localhost:1313/krh5284/traveler-camps/campgrounds/shamrock-hills-rv-park/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/krh5284/traveler-camps/campgrounds/shamrock-hills-rv-park/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Indiana - Wolf’s Leisure Campground</title>
-      <link>http://localhost:1313/krh5284/traveler-camps/campgrounds/wolf-s-leisure-campground/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/krh5284/traveler-camps/campgrounds/wolf-s-leisure-campground/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Iowa - Amana RV Park</title>
-      <link>http://localhost:1313/krh5284/traveler-camps/campgrounds/amana-rv-park/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/krh5284/traveler-camps/campgrounds/amana-rv-park/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Iowa - Independence RV Park and Campground</title>
-      <link>http://localhost:1313/krh5284/traveler-camps/campgrounds/independence-rv-park/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/krh5284/traveler-camps/campgrounds/independence-rv-park/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Maryland - Woodlands Camping Resort</title>
-      <link>http://localhost:1313/krh5284/traveler-camps/campgrounds/woodlands-camping-resort/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/krh5284/traveler-camps/campgrounds/woodlands-camping-resort/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Missouri - Basswood Resort</title>
-      <link>http://localhost:1313/krh5284/traveler-camps/campgrounds/basswood-resort/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/krh5284/traveler-camps/campgrounds/basswood-resort/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Nevada - Whispering River Ranch RV Park</title>
-      <link>http://localhost:1313/krh5284/traveler-camps/campgrounds/whispering-river-ranch-rv-park/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/krh5284/traveler-camps/campgrounds/whispering-river-ranch-rv-park/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>New Jersey - Four Seasons Family Campground</title>
-      <link>http://localhost:1313/krh5284/traveler-camps/campgrounds/four-seasons-family-campground/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/krh5284/traveler-camps/campgrounds/four-seasons-family-campground/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>New York - Niagara Shores Campground and Conference Center</title>
-      <link>http://localhost:1313/krh5284/traveler-camps/campgrounds/niagara-shores-campground/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/krh5284/traveler-camps/campgrounds/niagara-shores-campground/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Ohio - Lazy River at Granville</title>
-      <link>http://localhost:1313/krh5284/traveler-camps/campgrounds/lazy-river/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/krh5284/traveler-camps/campgrounds/lazy-river/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Ohio - Rippling Stream Campground</title>
-      <link>http://localhost:1313/krh5284/traveler-camps/campgrounds/rippling-stream-campground/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/krh5284/traveler-camps/campgrounds/rippling-stream-campground/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Ohio - Tree Haven Campground</title>
-      <link>http://localhost:1313/krh5284/traveler-camps/campgrounds/tree-haven-campground/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/krh5284/traveler-camps/campgrounds/tree-haven-campground/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Pennsylvania - Ben Franklin RV Park</title>
-      <link>http://localhost:1313/krh5284/traveler-camps/campgrounds/ben-franklin-rv-park/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/krh5284/traveler-camps/campgrounds/ben-franklin-rv-park/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Pennsylvania - Cedar Lake Family Campground</title>
-      <link>http://localhost:1313/krh5284/traveler-camps/campgrounds/cedar-lake-family-campground/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/krh5284/traveler-camps/campgrounds/cedar-lake-family-campground/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Tennessee - Chyttles Farm &amp; Campground</title>
-      <link>http://localhost:1313/krh5284/traveler-camps/campgrounds/chyttles-farm-campground/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/krh5284/traveler-camps/campgrounds/chyttles-farm-campground/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Tennessee - Cook&#39;s Lake RV Resort and Campground</title>
-      <link>http://localhost:1313/krh5284/traveler-camps/campgrounds/cooks-lake-rv/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/krh5284/traveler-camps/campgrounds/cooks-lake-rv/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Tennessee - Wells Creek RV Park</title>
-      <link>http://localhost:1313/krh5284/traveler-camps/campgrounds/wells-creek-rv-park/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/krh5284/traveler-camps/campgrounds/wells-creek-rv-park/</guid>
+      <guid>http://localhost:1313/traveler-camps/contact-us/</guid>
       <description></description>
       
     </item>
