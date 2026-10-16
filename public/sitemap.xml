@@ -3,114 +3,132 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>https://krh5284.github.io/traveler-camps/campgrounds/colorado/</loc>
-    <lastmod>2026-10-14T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/traveler-camps/campgrounds/alabama/</loc>
+    <lastmod>2026-10-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://krh5284.github.io/traveler-camps/campgrounds/</loc>
-    <lastmod>2026-10-14T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/traveler-camps/campgrounds/california/</loc>
+    <lastmod>2026-10-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/traveler-camps/campgrounds/</loc>
+    <lastmod>2026-10-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://krh5284.github.io/traveler-camps/campgrounds/florida/</loc>
-    <lastmod>2026-10-14T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/traveler-camps/campgrounds/indiana/</loc>
+    <lastmod>2026-10-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://krh5284.github.io/traveler-camps/campgrounds/georgia/</loc>
-    <lastmod>2026-10-14T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://krh5284.github.io/traveler-camps/campgrounds/idaho/</loc>
-    <lastmod>2026-10-14T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://krh5284.github.io/traveler-camps/campgrounds/illinois/</loc>
-    <lastmod>2026-10-14T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://krh5284.github.io/traveler-camps/campgrounds/indiana/</loc>
-    <lastmod>2026-10-14T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://krh5284.github.io/traveler-camps/campgrounds/iowa/</loc>
-    <lastmod>2026-10-14T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://krh5284.github.io/traveler-camps/</loc>
-    <lastmod>2026-10-14T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/traveler-camps/</loc>
+    <lastmod>2026-10-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>https://krh5284.github.io/traveler-camps/campgrounds/maryland/</loc>
+    <loc>http://localhost:1313/traveler-camps/campgrounds/west-virginia/</loc>
+    <lastmod>2026-10-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/traveler-camps/campgrounds/colorado/</loc>
     <lastmod>2026-10-14T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://krh5284.github.io/traveler-camps/campgrounds/missouri/</loc>
+    <loc>http://localhost:1313/traveler-camps/campgrounds/florida/</loc>
     <lastmod>2026-10-14T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://krh5284.github.io/traveler-camps/campgrounds/nevada/</loc>
+    <loc>http://localhost:1313/traveler-camps/campgrounds/georgia/</loc>
     <lastmod>2026-10-14T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://krh5284.github.io/traveler-camps/campgrounds/new-jersey/</loc>
+    <loc>http://localhost:1313/traveler-camps/campgrounds/idaho/</loc>
     <lastmod>2026-10-14T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://krh5284.github.io/traveler-camps/campgrounds/new-york/</loc>
+    <loc>http://localhost:1313/traveler-camps/campgrounds/illinois/</loc>
     <lastmod>2026-10-14T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://krh5284.github.io/traveler-camps/campgrounds/ohio/</loc>
+    <loc>http://localhost:1313/traveler-camps/campgrounds/iowa/</loc>
     <lastmod>2026-10-14T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://krh5284.github.io/traveler-camps/campgrounds/pennsylvania/</loc>
+    <loc>http://localhost:1313/traveler-camps/campgrounds/maryland/</loc>
     <lastmod>2026-10-14T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://krh5284.github.io/traveler-camps/campgrounds/tennessee/</loc>
+    <loc>http://localhost:1313/traveler-camps/campgrounds/missouri/</loc>
     <lastmod>2026-10-14T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://krh5284.github.io/traveler-camps/new-campground/</loc>
+    <loc>http://localhost:1313/traveler-camps/campgrounds/nevada/</loc>
+    <lastmod>2026-10-14T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/traveler-camps/campgrounds/new-jersey/</loc>
+    <lastmod>2026-10-14T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/traveler-camps/campgrounds/new-york/</loc>
+    <lastmod>2026-10-14T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/traveler-camps/campgrounds/ohio/</loc>
+    <lastmod>2026-10-14T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/traveler-camps/campgrounds/pennsylvania/</loc>
+    <lastmod>2026-10-14T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/traveler-camps/campgrounds/tennessee/</loc>
+    <lastmod>2026-10-14T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/traveler-camps/new-campground/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://krh5284.github.io/traveler-camps/contact-us/</loc>
+    <loc>http://localhost:1313/traveler-camps/contact-us/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

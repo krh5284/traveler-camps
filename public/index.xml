@@ -2,179 +2,209 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Long-Term &amp; Monthly Campgrounds for Traveling Workers on Traveler Camps</title>
-    <link>https://krh5284.github.io/traveler-camps/</link>
+    <link>http://localhost:1313/traveler-camps/</link>
     <description>Recent content in Long-Term &amp; Monthly Campgrounds for Traveling Workers on Traveler Camps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2026 </copyright>
-    <lastBuildDate>Wed, 14 Oct 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://krh5284.github.io/traveler-camps/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 15 Oct 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/traveler-camps/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Colorado Extended-Stay Campgrounds &amp; RV Parks</title>
-      <link>https://krh5284.github.io/traveler-camps/campgrounds/colorado/</link>
-      <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
+      <title>Alabama Extended-Stay Campgrounds &amp; RV Parks</title>
+      <link>http://localhost:1313/traveler-camps/campgrounds/alabama/</link>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate>
       
-      <guid>https://krh5284.github.io/traveler-camps/campgrounds/colorado/</guid>
+      <guid>http://localhost:1313/traveler-camps/campgrounds/alabama/</guid>
       <description></description>
       
     </item>
     
     <item>
-      <title>Florida Extended-Stay Campgrounds &amp; RV Parks</title>
-      <link>https://krh5284.github.io/traveler-camps/campgrounds/florida/</link>
-      <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
+      <title>California Extended-Stay Campgrounds &amp; RV Parks</title>
+      <link>http://localhost:1313/traveler-camps/campgrounds/california/</link>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate>
       
-      <guid>https://krh5284.github.io/traveler-camps/campgrounds/florida/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Georgia Extended-Stay Campgrounds &amp; RV Parks</title>
-      <link>https://krh5284.github.io/traveler-camps/campgrounds/georgia/</link>
-      <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://krh5284.github.io/traveler-camps/campgrounds/georgia/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Idaho Extended-Stay Campgrounds &amp; RV Parks</title>
-      <link>https://krh5284.github.io/traveler-camps/campgrounds/idaho/</link>
-      <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://krh5284.github.io/traveler-camps/campgrounds/idaho/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Illinois Extended-Stay Campgrounds &amp; RV Parks</title>
-      <link>https://krh5284.github.io/traveler-camps/campgrounds/illinois/</link>
-      <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://krh5284.github.io/traveler-camps/campgrounds/illinois/</guid>
+      <guid>http://localhost:1313/traveler-camps/campgrounds/california/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Indiana Extended-Stay Campgrounds &amp; RV Parks</title>
-      <link>https://krh5284.github.io/traveler-camps/campgrounds/indiana/</link>
+      <link>http://localhost:1313/traveler-camps/campgrounds/indiana/</link>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/traveler-camps/campgrounds/indiana/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>West Virginia Extended-Stay Campgrounds &amp; RV Parks</title>
+      <link>http://localhost:1313/traveler-camps/campgrounds/west-virginia/</link>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/traveler-camps/campgrounds/west-virginia/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Colorado Extended-Stay Campgrounds &amp; RV Parks</title>
+      <link>http://localhost:1313/traveler-camps/campgrounds/colorado/</link>
       <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
       
-      <guid>https://krh5284.github.io/traveler-camps/campgrounds/indiana/</guid>
+      <guid>http://localhost:1313/traveler-camps/campgrounds/colorado/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Florida Extended-Stay Campgrounds &amp; RV Parks</title>
+      <link>http://localhost:1313/traveler-camps/campgrounds/florida/</link>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/traveler-camps/campgrounds/florida/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Georgia Extended-Stay Campgrounds &amp; RV Parks</title>
+      <link>http://localhost:1313/traveler-camps/campgrounds/georgia/</link>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/traveler-camps/campgrounds/georgia/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Idaho Extended-Stay Campgrounds &amp; RV Parks</title>
+      <link>http://localhost:1313/traveler-camps/campgrounds/idaho/</link>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/traveler-camps/campgrounds/idaho/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Illinois Extended-Stay Campgrounds &amp; RV Parks</title>
+      <link>http://localhost:1313/traveler-camps/campgrounds/illinois/</link>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/traveler-camps/campgrounds/illinois/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Iowa Extended-Stay Campgrounds &amp; RV Parks</title>
-      <link>https://krh5284.github.io/traveler-camps/campgrounds/iowa/</link>
+      <link>http://localhost:1313/traveler-camps/campgrounds/iowa/</link>
       <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
       
-      <guid>https://krh5284.github.io/traveler-camps/campgrounds/iowa/</guid>
+      <guid>http://localhost:1313/traveler-camps/campgrounds/iowa/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Maryland Extended-Stay Campgrounds &amp; RV Parks</title>
-      <link>https://krh5284.github.io/traveler-camps/campgrounds/maryland/</link>
+      <link>http://localhost:1313/traveler-camps/campgrounds/maryland/</link>
       <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
       
-      <guid>https://krh5284.github.io/traveler-camps/campgrounds/maryland/</guid>
+      <guid>http://localhost:1313/traveler-camps/campgrounds/maryland/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Missouri Extended-Stay Campgrounds &amp; RV Parks</title>
-      <link>https://krh5284.github.io/traveler-camps/campgrounds/missouri/</link>
+      <link>http://localhost:1313/traveler-camps/campgrounds/missouri/</link>
       <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
       
-      <guid>https://krh5284.github.io/traveler-camps/campgrounds/missouri/</guid>
+      <guid>http://localhost:1313/traveler-camps/campgrounds/missouri/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Nevada Extended-Stay Campgrounds &amp; RV Parks</title>
-      <link>https://krh5284.github.io/traveler-camps/campgrounds/nevada/</link>
+      <link>http://localhost:1313/traveler-camps/campgrounds/nevada/</link>
       <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
       
-      <guid>https://krh5284.github.io/traveler-camps/campgrounds/nevada/</guid>
+      <guid>http://localhost:1313/traveler-camps/campgrounds/nevada/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>New Jersey Extended-Stay Campgrounds &amp; RV Parks</title>
-      <link>https://krh5284.github.io/traveler-camps/campgrounds/new-jersey/</link>
+      <link>http://localhost:1313/traveler-camps/campgrounds/new-jersey/</link>
       <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
       
-      <guid>https://krh5284.github.io/traveler-camps/campgrounds/new-jersey/</guid>
+      <guid>http://localhost:1313/traveler-camps/campgrounds/new-jersey/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>New York Extended-Stay Campgrounds &amp; RV Parks</title>
-      <link>https://krh5284.github.io/traveler-camps/campgrounds/new-york/</link>
+      <link>http://localhost:1313/traveler-camps/campgrounds/new-york/</link>
       <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
       
-      <guid>https://krh5284.github.io/traveler-camps/campgrounds/new-york/</guid>
+      <guid>http://localhost:1313/traveler-camps/campgrounds/new-york/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Ohio Extended-Stay Campgrounds &amp; RV Parks</title>
-      <link>https://krh5284.github.io/traveler-camps/campgrounds/ohio/</link>
+      <link>http://localhost:1313/traveler-camps/campgrounds/ohio/</link>
       <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
       
-      <guid>https://krh5284.github.io/traveler-camps/campgrounds/ohio/</guid>
+      <guid>http://localhost:1313/traveler-camps/campgrounds/ohio/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Pennsylvania Extended-Stay Campgrounds &amp; RV Parks</title>
-      <link>https://krh5284.github.io/traveler-camps/campgrounds/pennsylvania/</link>
+      <link>http://localhost:1313/traveler-camps/campgrounds/pennsylvania/</link>
       <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
       
-      <guid>https://krh5284.github.io/traveler-camps/campgrounds/pennsylvania/</guid>
+      <guid>http://localhost:1313/traveler-camps/campgrounds/pennsylvania/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Tennessee Extended-Stay Campgrounds &amp; RV Parks</title>
-      <link>https://krh5284.github.io/traveler-camps/campgrounds/tennessee/</link>
+      <link>http://localhost:1313/traveler-camps/campgrounds/tennessee/</link>
       <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
       
-      <guid>https://krh5284.github.io/traveler-camps/campgrounds/tennessee/</guid>
+      <guid>http://localhost:1313/traveler-camps/campgrounds/tennessee/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Add a Campground to Traveler Camps</title>
-      <link>https://krh5284.github.io/traveler-camps/new-campground/</link>
+      <link>http://localhost:1313/traveler-camps/new-campground/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://krh5284.github.io/traveler-camps/new-campground/</guid>
+      <guid>http://localhost:1313/traveler-camps/new-campground/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Contact Traveler Camps</title>
-      <link>https://krh5284.github.io/traveler-camps/contact-us/</link>
+      <link>http://localhost:1313/traveler-camps/contact-us/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://krh5284.github.io/traveler-camps/contact-us/</guid>
+      <guid>http://localhost:1313/traveler-camps/contact-us/</guid>
       <description></description>
       
     </item>
